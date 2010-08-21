@@ -66,15 +66,15 @@ class AdattablaFeltoltese < ActiveRecord::Migration
     ProductCategory.create.update_attributes(:nev=>"Képeslapok", :leiras=>"Sokféle változatban, postán is feladható", :kep=>"kepeslapok.jpg")
     ProductCategory.create.update_attributes(:nev=>"Könyvjelzők", :leiras=>"Hasznos kis ajándék a könyvek kedvelőinek", :kep=>"konyvjelzok.jpg")
 
-    ProductType.create.update_attributes(:product_category_id=>"1", :nev=>"A6 álló, 2 oldalas", :leiras=>"A6 álló, 2 oldalas", :kep=>"kepeslap_a6_allo_2old.jpg", :szelesseg=>"100", :magassag=>"150", :oldalszam=>"2", :felfele_nyilo=>"0")
-    ProductType.create.update_attributes(:product_category_id=>"1", :nev=>"A6 fekvő, 2 oldalas", :leiras=>"A6 fekvő, 2 oldalas", :kep=>"kepeslap_a6_fekvo_2old.jpg", :szelesseg=>"150", :magassag=>"100", :oldalszam=>"2", :felfele_nyilo=>"0")
+    ProductType.create.update_attributes(:product_category_id=>"1", :nev=>"A6 álló, 2 oldalas", :leiras=>"A6 álló, 2 oldalas képeslap", :kep=>"kepeslap_a6_allo_2old.jpg", :szelesseg=>"100", :magassag=>"150", :oldalszam=>"2", :felfele_nyilo=>"0")
+    ProductType.create.update_attributes(:product_category_id=>"1", :nev=>"A6 fekvő, 2 oldalas", :leiras=>"A6 fekvő, 2 oldalas képeslap", :kep=>"kepeslap_a6_fekvo_2old.jpg", :szelesseg=>"150", :magassag=>"100", :oldalszam=>"2", :felfele_nyilo=>"0")
 
-    ProductType.create.update_attributes(:product_category_id=>"1", :nev=>"A6 álló, 4 oldalas, oldalt nyíló", :leiras=>"A6 álló, 4 oldalas, oldalt nyíló", :kep=>"kepeslap_a6_allo_4old.jpg", :szelesseg=>"100", :magassag=>"150", :oldalszam=>"4", :felfele_nyilo=>"0")
-    ProductType.create.update_attributes(:product_category_id=>"1", :nev=>"A6 fekvő, 4 oldalas, oldalt nyíló", :leiras=>"A6 fekvő, 4 oldalas, oldalt nyíló", :kep=>"kepeslap_a6_fekvo_4old.jpg", :szelesseg=>"150", :magassag=>"100", :oldalszam=>"4", :felfele_nyilo=>"0")
-    ProductType.create.update_attributes(:product_category_id=>"1", :nev=>"A6 fekvő, 4 oldalas, felfelé nyíló", :leiras=>"A6 fekvő, 4 oldalas, felfelé nyíló", :kep=>"kepeslap_a6_fekvo_4old_fent.jpg", :szelesseg=>"150", :magassag=>"100", :oldalszam=>"4", :felfele_nyilo=>"1")
+    ProductType.create.update_attributes(:product_category_id=>"1", :nev=>"A6 álló, 4 oldalas, oldalt nyíló", :leiras=>"A6 álló, 4 oldalas, oldalt nyíló képeslap", :kep=>"kepeslap_a6_allo_4old.jpg", :szelesseg=>"100", :magassag=>"150", :oldalszam=>"4", :felfele_nyilo=>"0")
+    ProductType.create.update_attributes(:product_category_id=>"1", :nev=>"A6 fekvő, 4 oldalas, oldalt nyíló", :leiras=>"A6 fekvő, 4 oldalas, oldalt nyíló képeslap", :kep=>"kepeslap_a6_fekvo_4old.jpg", :szelesseg=>"150", :magassag=>"100", :oldalszam=>"4", :felfele_nyilo=>"0")
+    ProductType.create.update_attributes(:product_category_id=>"1", :nev=>"A6 fekvő, 4 oldalas, felfelé nyíló", :leiras=>"A6 fekvő, 4 oldalas, felfelé nyíló képeslap", :kep=>"kepeslap_a6_fekvo_4old_fent.jpg", :szelesseg=>"150", :magassag=>"100", :oldalszam=>"4", :felfele_nyilo=>"1")
 
-    ProductType.create.update_attributes(:product_category_id=>"2", :nev=>"50 x 200 mm-es", :leiras=>"50 x 200 mm-es", :kep=>"konyvjelzo_50x200.jpg", :szelesseg=>"50", :magassag=>"200", :oldalszam=>"2", :felfele_nyilo=>"0")
-    ProductType.create.update_attributes(:product_category_id=>"2", :nev=>"60 x 200 mm-es", :leiras=>"60 x 200 mm-es", :kep=>"konyvjelzo_60x200.jpg", :szelesseg=>"60", :magassag=>"200", :oldalszam=>"2", :felfele_nyilo=>"0")
+    ProductType.create.update_attributes(:product_category_id=>"2", :nev=>"50 x 200 mm-es", :leiras=>"50 x 200 mm-es könyvjelző", :kep=>"konyvjelzo_50x200.jpg", :szelesseg=>"50", :magassag=>"200", :oldalszam=>"2", :felfele_nyilo=>"0")
+    ProductType.create.update_attributes(:product_category_id=>"2", :nev=>"60 x 200 mm-es", :leiras=>"60 x 200 mm-es könyvjelző", :kep=>"konyvjelzo_60x200.jpg", :szelesseg=>"60", :magassag=>"200", :oldalszam=>"2", :felfele_nyilo=>"0")
     
     OrderStatus.create.update_attributes(:nev=>"megrendelve") 
     OrderStatus.create.update_attributes(:nev=>"visszaigazolva") 

@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :paper_weight_prices
   map.resources :product_categories
   map.resources :product_types
-  map.resources :order_items,:member => { :teteladatai => :get }
+  map.resources :order_items, :member => { :teteladatai => :any, :teteladatai_szerkeszt => :any }
   map.resources :orders
   map.resources :order_statuses
   map.resources :users

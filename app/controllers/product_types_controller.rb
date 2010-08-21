@@ -2,9 +2,11 @@ class ProductTypesController < ApplicationController
   # GET /product_types
   # GET /product_types.xml
   def index
-#    @product_types = ProductType.all(params[:id])
-#@x=(params[:id])
-    @product_types = ProductType.all(:conditions => "product_category_id = '#{params[:id]}'")
+    #@product_types = ProductType.all(:conditions => "product_category_id = '#{params[:id]}'")   - behatolható
+    #@product_types = ProductType.all(:conditions => { :product_category_id => params[:category] } )    - jó, de csak egyenlőségi vizsgálatot tud
+    @product_types = ProductType.all(:conditions => ["product_category_id == ? ",
+                                                  params[:category].to_i ] )
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @product_types }

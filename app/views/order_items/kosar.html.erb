@@ -1,0 +1,41 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<%= "kosar" %>
+
+<h1>Kosár</h1>
+
+<table>
+  <tr>
+    <th>sorsz</th>
+    <th>tétel neve</th>
+    <th>darab</th>
+    <th>Ft/db</th>
+    <th>tétel ára</th>
+    <th>számol</th>
+    <th>eldob</th>
+    <th>product_type_id</th>
+  </tr>
+
+<% @kosar_items.each do |order_item| %>
+  <tr>
+    <td><%=h order_item.order_id %></td>
+    <td><%=h order_item.print_id %></td>
+    <td><%=h order_item.paper_weight_price_id %></td>
+    <td><%=h order_item.paper_type_id %></td>
+    <td><%=h order_item.product_type_id %></td>
+    <td><%=h order_item.document_id %></td>
+    <td><%=h order_item.darab %></td>
+    <td><%=h order_item.ar_lezart %></td>
+    <td><%= link_to 'Show', order_item %></td>
+    <td><%= link_to 'Edit', edit_order_item_path(order_item) %></td>
+    <td><%= link_to 'Destroy', order_item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New order_item', new_order_item_path %>

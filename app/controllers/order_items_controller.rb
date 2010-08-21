@@ -1,6 +1,7 @@
 class OrderItemsController < ApplicationController
-  # GET /order_items
-  # GET /order_items.xml
+
+  # GET /order_items/1
+  # GET /order_items/1.xml
   def index
     @order_items = OrderItem.all
 
@@ -10,10 +11,66 @@ class OrderItemsController < ApplicationController
     end
   end
 
-  # GET /order_items/1
-  # GET /order_items/1.xml
+  def szamol
+#    kiszámolja a lezárt árat
+    if  @order_item.darab
+      darab = @order_item.darab
+    else
+      darab = 0
+    end
+    @order_item.ar_lezart = darab * 30
+  end
+
   def show
     @order_item = OrderItem.find(params[:id])
+    szamol # meghívja a lezárt árat kiszámoló metódust
+    session[:order] ||= Order.create # ,megnézi hogy létezik-e az ideiglenes order ehhez a látogatóhoz
+    @order = session[:order] # az order változóba pakolja a session tartalmát
+    @order_item.order_id = @order.id # a frissen létrehozott order itemet az ideiglenes orderhez kapcsolja az order_id beírásával
+    @order_item.product_type_id = session[:product_type_id]
+    @order_item.save # menti az order itemet az order_id vel
+#    @kosar = OrderItem.all(:conditions => ["order_id == ? ", @order.id ] )
+    show_kosar #ez rakja be a kosár változóba a megjelenítendő order_item eket
+
+#    @kosar = OrderItem.find(session[:order])
+#    redirect_to :action => "kosar"
+#    respond_to do |format|
+#      format.html # show.html.erb
+#      format.xml  { render :xml => @order_item }
+#    end
+  end
+
+  def show_kosar
+
+    @order = session[:order] # az order változóba pakolja a session tartalmát
+    @kosar = OrderItem.all(:conditions => ["order_id == ? ", @order.id ] )
+
+#    @kosar = OrderItem.find(session[:order])
+#    redirect_to :action => "kosar"
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @order_item }
+    end
+  end
+
+  # DELETE /order_items/1
+  # DELETE /order_items/1.xml
+  def destroy
+    @order_item = OrderItem.find(params[:id])
+    @order_item.destroy
+
+    redirect_to :action => "show_kosar"
+
+#    respond_to do |format|
+#      format.html { redirect_to show }
+#      format.xml  { head :ok }
+#    end
+  end
+
+  def teteladatai
+    @product_type = ProductType.find(params[:id])
+    session[:product_type_id] = params[:id]
+    @order_item = OrderItem.new
 
     respond_to do |format|
       format.html # show.html.erb
@@ -21,14 +78,13 @@ class OrderItemsController < ApplicationController
     end
   end
 
-  def teteladatai
-#    @order_item = OrderItem.find(params[:id])
-    @product_type = ProductType.find(params[:id])
-    @prints = Print.all
-    @order_item = OrderItem.new
+  def teteladatai_szerkeszt
+    @order_item = OrderItem.find(params[:id])
+    @product_type = ProductType.find(@order_item.product_type_id)
+    session[:product_type_id] = params[:id]
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html #render :action => "teteladatai"
       format.xml  { render :xml => @order_item }
     end
   end
@@ -83,15 +139,4 @@ class OrderItemsController < ApplicationController
     end
   end
 
-  # DELETE /order_items/1
-  # DELETE /order_items/1.xml
-  def destroy
-    @order_item = OrderItem.find(params[:id])
-    @order_item.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(order_items_url) }
-      format.xml  { head :ok }
-    end
-  end
 end

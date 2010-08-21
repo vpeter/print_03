@@ -1,4 +1,4 @@
-<h2>A kiválasztott terméktípus fix jellemzői:</h2>
+<h2>A kiválasztott terméktípus fix jellemzői:</h2>teteladatai_szerkeszt
 
 <table cellpadding="3" border="0">
 <tr>
@@ -60,7 +60,7 @@
     <%= f.label "tétel megnevezése:" %>
     <%= f.text_field :nev %>
     <%= "a tételre jellemző név (pl: nyári szórólap):" %><br /><br />
-    
+
     <%= f.label "nyomás:" %>
     <%= select :order_item,:print_id, Print.find(:all).collect{|p| [p.nev, p.id]} %><br /><br />
 

@@ -1,17 +1,14 @@
-<h1>Listing product_categories</h1>
+<h1>Válasszon termékkategóriát!</h1>
 
-<table cellpadding="8">
-  <%#*<tr>%>
-    <%#*<th>Nev</th>%>
-    <%#*<th>Leiras</th>%>
-    <%#*<th>Kep</th>%>
-  <%#*</tr>%>
-
+<table cellpadding="6">
 <% @product_categories.each do |product_category| %>
   <tr>
-    <td><%= link_to product_category.nev, :controller=>"product_types", :action=>"index", :id=>product_category.id %></td>
-    <td><%=h product_category.leiras %></td>
     <td><%=h product_category.kep %></td>
+    <td>
+<%= link_to product_category.nev,
+  product_types_path( :category=> product_category.id ) %>
+    </td>
+    <td><%=h product_category.leiras %></td>
   </tr>
 <% end %>
 </table>
