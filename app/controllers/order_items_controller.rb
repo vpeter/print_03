@@ -72,8 +72,7 @@ class OrderItemsController < ApplicationController
   # DELETE /order_items/1
   # DELETE /order_items/1.xml
   def destroy
-   
-    @order_items = OrderItem.find(params[:id])
+    @order_item = OrderItem.find(params[:id])
     @order_item.destroy
 
     redirect_to :action => "show_kosar"

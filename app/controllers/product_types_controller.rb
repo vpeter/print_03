@@ -5,6 +5,7 @@ class ProductTypesController < ApplicationController
     #@product_types = ProductType.all(:conditions => "product_category_id = '#{params[:id]}'")   - behatolható
     #@product_types = ProductType.all(:conditions => { :product_category_id => params[:category] } )    - jó, de csak egyenlőségi vizsgálatot tud
     @product_types = ProductType.all(:conditions => ["product_category_id == ? ", params[:category].to_i ] )
+    session[:product_category] = params[:category].to_i
 
     respond_to do |format|
       format.html # index.html.erb

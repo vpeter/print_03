@@ -23725,3 +23725,542 @@ Rendering order_items/teteladatai_szerkeszt
   [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
   [4;36;1mPaperType Load (0.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
 Completed in 70ms (View: 40, DB: 0) | 200 OK [http://localhost/order_items/129/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-25 21:25:11) [GET]
+  Parameters: {"id"=>"129"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 129) [0m
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (1.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 79ms (View: 44, DB: 3) | 200 OK [http://localhost/order_items/129/teteladatai_szerkeszt]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 21:25:35) [GET]
+  Parameters: {"category"=>"1"}
+  [4;36;1mProductType Load (2.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 29ms (View: 18, DB: 2) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 21:25:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (2.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 82ms (View: 52, DB: 4) | 200 OK [http://localhost/order_items/2/teteladatai]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 21:26:06) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 95ms (View: 84, DB: 1) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 21:26:10) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (1.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 73ms (View: 45, DB: 3) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 21:26:41) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 27ms (View: 15, DB: 2) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 21:26:43) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (0.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (2.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 71ms (View: 43, DB: 3) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 21:26:53) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (2.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 74ms (View: 44, DB: 4) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-25 21:27:24) [GET]
+  [4;36;1mProductCategory Load (3.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 115ms (View: 65, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 21:27:28) [GET]
+  Parameters: {"category"=>"1", "category2"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 50ms (View: 30, DB: 0) | 200 OK [http://localhost/product_types?category2=1&category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 21:27:30) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (0.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 5420ms (View: 130, DB: 0) | 200 OK [http://localhost/order_items/5/teteladatai]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 21:29:03) [GET]
+  Parameters: {"category"=>"2", "category2"=>"2"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 40ms (View: 30, DB: 0) | 200 OK [http://localhost/product_types?category2=2&category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 21:29:20) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (0.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 70ms (View: 50, DB: 0) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 21:31:37) [GET]
+  Parameters: {"category"=>"1", "category2"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/product_types?category2=1&category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 21:31:47) [GET]
+  Parameters: {"category"=>"2", "category2"=>"2"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/product_types?category2=2&category=2]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 21:38:24) [GET]
+  Parameters: {"category"=>"1", "category2"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/product_types?category2=1&category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 21:39:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (0.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 60ms (View: 40, DB: 0) | 200 OK [http://localhost/order_items/3/teteladatai]
+
+
+Processing OrderItemsController#index (for 127.0.0.1 at 2010-08-25 21:39:33) [GET]
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" [0m
+Rendering template within layouts/application
+Rendering order_items/index
+Completed in 140ms (View: 120, DB: 0) | 200 OK [http://localhost/order_items/]
+
+
+Processing OrderItemsController#index (for 127.0.0.1 at 2010-08-25 21:39:55) [GET]
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" [0m
+Rendering template within layouts/application
+Rendering order_items/index
+Completed in 200ms (View: 190, DB: 0) | 200 OK [http://localhost/order_items]
+
+
+Processing OrderItemsController#edit (for 127.0.0.1 at 2010-08-25 21:40:13) [GET]
+  Parameters: {"id"=>"125"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 125) [0m
+Rendering template within layouts/application
+Rendering order_items/edit
+Completed in 70ms (View: 60, DB: 0) | 200 OK [http://localhost/order_items/125/edit]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 21:40:17) [GET]
+  Parameters: {"id"=>"122"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 122) [0m
+  [4;35;1mOrder Create (0.0ms)[0m   [0mINSERT INTO "orders" ("address_szall_id", "address_szla_id", "datum_megr", "megjegyzes", "updated_at", "datum_szall", "order_status_id", "user_id", "created_at") VALUES(NULL, NULL, NULL, NULL, '2010-08-25 19:40:17', NULL, NULL, NULL, '2010-08-25 19:40:17')[0m
+  [4;36;1mOrderItem Update (0.0ms)[0m   [0;1mUPDATE "order_items" SET "order_id" = 29, "product_type_id" = 3, "updated_at" = '2010-08-25 19:40:17' WHERE "id" = 122[0m
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 29 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 60ms (View: 20, DB: 0) | 200 OK [http://localhost/order_items/122]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-25 22:04:57) [GET]
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 35ms (View: 26, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:05:08) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 36ms (View: 18, DB: 3) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:05:46) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 41ms (View: 24, DB: 2) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:06:20) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 43ms (View: 26, DB: 2) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:08:20) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 41ms (View: 24, DB: 2) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:08:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (1.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 74ms (View: 45, DB: 3) | 200 OK [http://localhost/order_items/1/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:08:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 78ms (View: 43, DB: 4) | 200 OK [http://localhost/order_items/1/teteladatai]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:08:43) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 36ms (View: 18, DB: 3) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:08:45) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 73ms (View: 42, DB: 5) | 200 OK [http://localhost/order_items/3/teteladatai]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:08:56) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 33ms (View: 16, DB: 2) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:09:07) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 72ms (View: 43, DB: 3) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:11:33) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 79ms (View: 50, DB: 3) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:11:36) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 75ms (View: 45, DB: 3) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:11:38) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 139ms (View: 108, DB: 4) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:12:02) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 73ms (View: 43, DB: 4) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:12:04) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 74ms (View: 43, DB: 5) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:14:34) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (1.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 142ms (View: 43, DB: 3) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:14:37) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (1.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 72ms (View: 45, DB: 1) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:15:04) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 72ms (View: 43, DB: 4) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:15:08) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 74ms (View: 45, DB: 4) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:15:22) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (1.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 74ms (View: 43, DB: 5) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:15:29) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 35ms (View: 18, DB: 2) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:15:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 139ms (View: 43, DB: 4) | 200 OK [http://localhost/order_items/2/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:15:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (1.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 72ms (View: 44, DB: 3) | 200 OK [http://localhost/order_items/2/teteladatai]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:15:53) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 38ms (View: 18, DB: 2) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-25 22:16:10) [GET]
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 90ms (View: 80, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:16:14) [GET]
+  Parameters: {"category"=>"1"}
+  [4;36;1mProductType Load (2.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 35ms (View: 17, DB: 3) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:16:18) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 32ms (View: 15, DB: 2) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:16:22) [GET]
+  Parameters: {"category"=>"1"}
+  [4;36;1mProductType Load (2.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 35ms (View: 16, DB: 3) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 22:16:25) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 32ms (View: 15, DB: 2) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 22:16:54) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (2.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 73ms (View: 44, DB: 3) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-25 22:17:02) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"avPjr0e+12CkYX3GYa9YoZGG0ix4QDQ06lYQ3cuxwMQ=", "order_item"=>{"darab"=>"", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>""}}
+  [4;36;1mOrderItem Create (1.0ms)[0m   [0;1mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(NULL, NULL, '2010-08-25 20:17:02', 1, NULL, NULL, 1, '', NULL, NULL, '2010-08-25 20:17:02')[0m
+Redirected to http://localhost:3000/order_items/132
+Completed in 28ms (DB: 1) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 22:17:02) [GET]
+  Parameters: {"id"=>"132"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 132) [0m
+  [4;36;1mOrderItem Update (1.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 0, "order_id" = 29, "product_type_id" = 6, "updated_at" = '2010-08-25 20:17:02' WHERE "id" = 132[0m
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 29 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 71ms (View: 11, DB: 3) | 200 OK [http://localhost/order_items/132]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-25 22:17:08) [GET]
+  Parameters: {"id"=>"122"}
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 122) [0m
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 154ms (View: 52, DB: 5) | 200 OK [http://localhost/order_items/122/teteladatai_szerkeszt]
