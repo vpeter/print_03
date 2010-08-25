@@ -22115,3 +22115,1613 @@ Rendering order_items/teteladatai_szerkeszt
   [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
   [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
 Completed in 136ms (View: 80, DB: 6) | 200 OK [http://localhost/order_items/116/teteladatai_szerkeszt]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-21 22:26:55) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 292ms (View: 163, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-21 22:27:17) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (3.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 151ms (View: 75, DB: 4) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-21 22:27:20) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 282ms (View: 227, DB: 5) | 200 OK [http://localhost/order_items/5/teteladatai]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-21 22:28:02) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (3.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 52ms (View: 32, DB: 3) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-21 22:28:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (4.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 141ms (View: 86, DB: 6) | 200 OK [http://localhost/order_items/3/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-21 22:32:29) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"1ikGUUKTw3UlhhIO4CGP3nlpXRUDctqrxyK67fM/UcY=", "order_item"=>{"darab"=>"8888", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"Haliho"}}
+  [4;35;1mOrderItem Create (2.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(8888, NULL, '2010-08-21 20:32:29', 1, NULL, NULL, 1, 'Haliho', NULL, NULL, '2010-08-21 20:32:29')[0m
+Redirected to http://localhost:3000/order_items/117
+Completed in 55ms (DB: 2) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-21 22:32:29) [GET]
+  Parameters: {"id"=>"117"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 117) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 266640, "order_id" = 25, "product_type_id" = 3, "updated_at" = '2010-08-21 20:32:29' WHERE "id" = 117[0m
+  [4;36;1mOrderItem Load (5.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 25 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 179ms (View: 112, DB: 7) | 200 OK [http://localhost/order_items/117]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-21 22:35:26) [GET]
+  Parameters: {"id"=>"116"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 116) [0m
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 116) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=116):
+  app/controllers/order_items_controller.rb:83:in `teteladatai_szerkeszt'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (101.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-21 22:35:31) [GET]
+  Parameters: {"id"=>"116"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 116) [0m
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 116) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=116):
+  app/controllers/order_items_controller.rb:83:in `teteladatai_szerkeszt'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (217.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-21 22:35:34) [GET]
+  Parameters: {"id"=>"116"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 116) [0m
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 116) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=116):
+  app/controllers/order_items_controller.rb:83:in `teteladatai_szerkeszt'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (92.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing OrderItemsController#destroy (for 127.0.0.1 at 2010-08-21 22:35:43) [DELETE]
+  Parameters: {"authenticity_token"=>"1ikGUUKTw3UlhhIO4CGP3nlpXRUDctqrxyK67fM/UcY=", "id"=>"116"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 116) [0m
+  [4;36;1mOrderItem Destroy (1.0ms)[0m   [0;1mDELETE FROM "order_items" WHERE "id" = 116[0m
+Redirected to http://localhost:3000/order_items/show_kosar
+Completed in 46ms (DB: 1) | 302 Found [http://localhost/order_items/116]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-21 22:35:43) [GET]
+  Parameters: {"id"=>"show_kosar"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find OrderItem with ID=show_kosar):
+  app/controllers/order_items_controller.rb:25:in `show'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (215.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing OrderItemsController#destroy (for 127.0.0.1 at 2010-08-21 22:38:29) [DELETE]
+  Parameters: {"authenticity_token"=>"1ikGUUKTw3UlhhIO4CGP3nlpXRUDctqrxyK67fM/UcY=", "id"=>"112"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 112) [0m
+  [4;35;1mOrderItem Destroy (2.0ms)[0m   [0mDELETE FROM "order_items" WHERE "id" = 112[0m
+Redirected to http://localhost:3000/order_items/show_kosar
+Completed in 46ms (DB: 3) | 302 Found [http://localhost/order_items/112]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-21 22:38:29) [GET]
+  Parameters: {"id"=>"show_kosar"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find OrderItem with ID=show_kosar):
+  app/controllers/order_items_controller.rb:25:in `show'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-21 23:23:57) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 184ms (View: 110, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-22 16:56:49) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (2.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 3566ms (View: 169, DB: 4) | 200 OK [http://localhost/order_items/4/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-22 16:56:52) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (2.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 151ms (View: 119, DB: 3) | 200 OK [http://localhost/order_items/4/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-22 16:57:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;36;1mPrint Load (2.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (3.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 150ms (View: 97, DB: 7) | 200 OK [http://localhost/order_items/2/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-22 16:57:30) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"bCCTa+Lg6/YM0D9BM1fm++lryZbGsJDk1oBFMcKmicc=", "order_item"=>{"darab"=>"5555555", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"fds"}}
+  [4;36;1mOrderItem Create (35.0ms)[0m   [0;1mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(5555555, NULL, '2010-08-22 14:57:30', 1, NULL, NULL, 1, 'fds', NULL, NULL, '2010-08-22 14:57:30')[0m
+Redirected to http://localhost:3000/order_items/118
+Completed in 96ms (DB: 35) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-22 16:57:31) [GET]
+  Parameters: {"id"=>"118"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 118) [0m
+  [4;36;1mOrder Create (1.0ms)[0m   [0;1mINSERT INTO "orders" ("address_szall_id", "address_szla_id", "datum_megr", "megjegyzes", "updated_at", "datum_szall", "order_status_id", "user_id", "created_at") VALUES(NULL, NULL, NULL, NULL, '2010-08-22 14:57:31', NULL, NULL, NULL, '2010-08-22 14:57:31')[0m
+  [4;35;1mOrderItem Update (34.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 166666650, "order_id" = 26, "product_type_id" = 2, "updated_at" = '2010-08-22 14:57:31' WHERE "id" = 118[0m
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 26 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 129ms (View: 25, DB: 37) | 200 OK [http://localhost/order_items/118]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-22 16:57:34) [GET]
+  [4;35;1mProductCategory Load (2.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 61ms (View: 35, DB: 2) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-22 16:57:36) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (2.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 128ms (View: 105, DB: 2) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-22 16:57:37) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (2.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (4.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 163ms (View: 97, DB: 8) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-22 16:57:45) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"bCCTa+Lg6/YM0D9BM1fm++lryZbGsJDk1oBFMcKmicc=", "order_item"=>{"darab"=>"33", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"rrrrrrrrr"}}
+  [4;36;1mOrderItem Create (2.0ms)[0m   [0;1mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(33, NULL, '2010-08-22 14:57:45', 1, NULL, NULL, 1, 'rrrrrrrrr', NULL, NULL, '2010-08-22 14:57:45')[0m
+Redirected to http://localhost:3000/order_items/119
+Completed in 65ms (DB: 2) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-22 16:57:45) [GET]
+  Parameters: {"id"=>"119"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 119) [0m
+  [4;36;1mOrderItem Update (2.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 990, "order_id" = 26, "product_type_id" = 7, "updated_at" = '2010-08-22 14:57:45' WHERE "id" = 119[0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 26 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 246ms (View: 149, DB: 5) | 200 OK [http://localhost/order_items/119]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-22 16:58:13) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 35ms (View: 14, DB: 2) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-22 16:58:14) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 63ms (View: 39, DB: 3) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-22 16:58:15) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (4.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 167ms (View: 100, DB: 8) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-22 16:58:22) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"bCCTa+Lg6/YM0D9BM1fm++lryZbGsJDk1oBFMcKmicc=", "order_item"=>{"darab"=>"222", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"33eerr"}}
+  [4;35;1mOrderItem Create (2.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(222, NULL, '2010-08-22 14:58:22', 1, NULL, NULL, 1, '33eerr', NULL, NULL, '2010-08-22 14:58:22')[0m
+Redirected to http://localhost:3000/order_items/120
+Completed in 66ms (DB: 2) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-22 16:58:22) [GET]
+  Parameters: {"id"=>"120"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 120) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 6660, "order_id" = 26, "product_type_id" = 7, "updated_at" = '2010-08-22 14:58:22' WHERE "id" = 120[0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 26 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 79ms (View: 25, DB: 4) | 200 OK [http://localhost/order_items/120]
+
+
+Processing OrderItemsController#destroy (for 127.0.0.1 at 2010-08-22 16:58:28) [DELETE]
+  Parameters: {"authenticity_token"=>"bCCTa+Lg6/YM0D9BM1fm++lryZbGsJDk1oBFMcKmicc=", "id"=>"118"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 118) [0m
+  [4;36;1mOrderItem Destroy (1.0ms)[0m   [0;1mDELETE FROM "order_items" WHERE "id" = 118[0m
+Redirected to http://localhost:3000/order_items/show_kosar
+Completed in 55ms (DB: 2) | 302 Found [http://localhost/order_items/118]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-22 16:58:29) [GET]
+  Parameters: {"id"=>"show_kosar"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find OrderItem with ID=show_kosar):
+  app/controllers/order_items_controller.rb:25:in `show'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (120.0ms)
+Rendered rescues/_request_and_response (6.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-22 16:58:33) [GET]
+  Parameters: {"id"=>"120"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 120) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 26 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 216ms (View: 25, DB: 3) | 200 OK [http://localhost/order_items/120]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-22 16:58:41) [GET]
+  Parameters: {"id"=>"119"}
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 119) [0m
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (4.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 191ms (View: 116, DB: 10) | 200 OK [http://localhost/order_items/119/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-22 16:58:49) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"bCCTa+Lg6/YM0D9BM1fm++lryZbGsJDk1oBFMcKmicc=", "order_item"=>{"darab"=>"33", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"rrrrrrrrr"}, "id"=>"119"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 119) [0m
+Redirected to http://localhost:3000/order_items/119
+Completed in 56ms (DB: 1) | 302 Found [http://localhost/order_items/119]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-22 16:58:50) [GET]
+  Parameters: {"id"=>"119"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 119) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "product_type_id" = 119, "updated_at" = '2010-08-22 14:58:50' WHERE "id" = 119[0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 26 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 95ms (View: 24, DB: 4) | 200 OK [http://localhost/order_items/119]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-22 16:58:53) [GET]
+  Parameters: {"id"=>"120"}
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 120) [0m
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (2.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (4.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 170ms (View: 94, DB: 10) | 200 OK [http://localhost/order_items/120/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-22 16:59:03) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"bCCTa+Lg6/YM0D9BM1fm++lryZbGsJDk1oBFMcKmicc=", "order_item"=>{"darab"=>"222444", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"33eerr"}, "id"=>"120"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 120) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "darab" = 222444, "updated_at" = '2010-08-22 14:59:03' WHERE "id" = 120[0m
+Redirected to http://localhost:3000/order_items/120
+Completed in 64ms (DB: 2) | 302 Found [http://localhost/order_items/120]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-22 16:59:03) [GET]
+  Parameters: {"id"=>"120"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 120) [0m
+  [4;35;1mOrderItem Update (2.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 6673320, "product_type_id" = 120, "updated_at" = '2010-08-22 14:59:03' WHERE "id" = 120[0m
+  [4;36;1mOrderItem Load (3.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 26 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 101ms (View: 26, DB: 6) | 200 OK [http://localhost/order_items/120]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-23 01:21:07) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 273ms (View: 134, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-23 01:21:18) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 143ms (View: 75, DB: 2) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-23 01:21:20) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 9827ms (View: 213, DB: 6) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-23 01:21:52) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"2323", "print_id"=>"4", "paper_type_id"=>"1", "nev"=>"asasasasasas"}}
+  [4;35;1mOrderItem Create (1.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(2323, NULL, '2010-08-22 23:21:52', 4, NULL, NULL, 1, 'asasasasasas', NULL, NULL, '2010-08-22 23:21:52')[0m
+Redirected to http://localhost:3000/order_items/121
+Completed in 56ms (DB: 1) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-23 01:21:53) [GET]
+  Parameters: {"id"=>"121"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 121) [0m
+  [4;35;1mOrder Create (1.0ms)[0m   [0mINSERT INTO "orders" ("address_szall_id", "address_szla_id", "datum_megr", "megjegyzes", "updated_at", "datum_szall", "order_status_id", "user_id", "created_at") VALUES(NULL, NULL, NULL, NULL, '2010-08-22 23:21:53', NULL, NULL, NULL, '2010-08-22 23:21:53')[0m
+  [4;36;1mOrderItem Update (2.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 69690, "order_id" = 27, "product_type_id" = 7, "updated_at" = '2010-08-22 23:21:53' WHERE "id" = 121[0m
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 97ms (View: 26, DB: 5) | 200 OK [http://localhost/order_items/121]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-23 01:22:11) [GET]
+  Parameters: {"id"=>"121"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 121) [0m
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (4.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 189ms (View: 113, DB: 9) | 200 OK [http://localhost/order_items/121/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-23 01:22:35) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"2323", "print_id"=>"4", "paper_type_id"=>"1", "nev"=>"asasasasasas"}, "id"=>"121"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 121) [0m
+Redirected to http://localhost:3000/order_items/121
+Completed in 49ms (DB: 1) | 302 Found [http://localhost/order_items/121]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-23 01:22:36) [GET]
+  Parameters: {"id"=>"121"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 121) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "product_type_id" = 121, "updated_at" = '2010-08-22 23:22:36' WHERE "id" = 121[0m
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 66ms (View: 11, DB: 2) | 200 OK [http://localhost/order_items/121]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-23 01:22:38) [GET]
+  Parameters: {"id"=>"121"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 121) [0m
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 121) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=121):
+  app/controllers/order_items_controller.rb:83:in `teteladatai_szerkeszt'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (92.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-23 01:22:58) [GET]
+  [4;35;1mProductCategory Load (3.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 140ms (View: 10, DB: 3) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-23 01:22:59) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (2.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 46ms (View: 27, DB: 3) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-23 01:23:01) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (2.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (3.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 127ms (View: 76, DB: 7) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-23 01:23:10) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"44444444444444444", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"rrrrrrrrrrrrrrrrrrrrrrr"}}
+  [4;36;1mOrderItem Create (1.0ms)[0m   [0;1mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(44444444444444444, NULL, '2010-08-22 23:23:10', 1, NULL, NULL, 1, 'rrrrrrrrrrrrrrrrrrrrrrr', NULL, NULL, '2010-08-22 23:23:10')[0m
+Redirected to http://localhost:3000/order_items/122
+Completed in 53ms (DB: 1) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-23 01:23:10) [GET]
+  Parameters: {"id"=>"122"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 122) [0m
+  [4;36;1mOrderItem Update (1.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 1333333333333333320, "order_id" = 27, "product_type_id" = 6, "updated_at" = '2010-08-22 23:23:10' WHERE "id" = 122[0m
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 203ms (View: 18, DB: 3) | 200 OK [http://localhost/order_items/122]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-23 01:30:12) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"44444444444444444", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"2222222222222"}}
+  [4;36;1mOrderItem Create (1.0ms)[0m   [0;1mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(44444444444444444, NULL, '2010-08-22 23:30:12', 1, NULL, NULL, 1, '2222222222222', NULL, NULL, '2010-08-22 23:30:12')[0m
+Redirected to http://localhost:3000/order_items/123
+Completed in 76ms (DB: 1) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-23 01:30:12) [GET]
+  Parameters: {"id"=>"123"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 123) [0m
+  [4;36;1mOrderItem Update (2.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 1333333333333333320, "order_id" = 27, "product_type_id" = 6, "updated_at" = '2010-08-22 23:30:12' WHERE "id" = 123[0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 113ms (View: 45, DB: 5) | 200 OK [http://localhost/order_items/123]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-23 01:30:18) [GET]
+  Parameters: {"id"=>"122"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 122) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=122):
+  app/controllers/order_items_controller.rb:71:in `teteladatai'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (92.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-23 01:30:52) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 196ms (View: 126, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-23 01:30:57) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 83ms (View: 54, DB: 3) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-23 01:30:59) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (4.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 300ms (View: 240, DB: 7) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-23 01:31:15) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"1111", "print_id"=>"3", "paper_type_id"=>"1", "nev"=>"aaaa"}}
+  [4;35;1mOrderItem Create (2.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(1111, NULL, '2010-08-22 23:31:15', 3, NULL, NULL, 1, 'aaaa', NULL, NULL, '2010-08-22 23:31:15')[0m
+Redirected to http://localhost:3000/order_items/124
+Completed in 51ms (DB: 2) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-23 01:31:16) [GET]
+  Parameters: {"id"=>"124"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 124) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 33330, "order_id" = 27, "product_type_id" = 7, "updated_at" = '2010-08-22 23:31:16' WHERE "id" = 124[0m
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 111ms (View: 50, DB: 3) | 200 OK [http://localhost/order_items/124]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-23 01:31:33) [GET]
+  Parameters: {"id"=>"124"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 124) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=124):
+  app/controllers/order_items_controller.rb:71:in `teteladatai'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (259.0ms)
+Rendered rescues/_request_and_response (6.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-23 01:36:33) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 26ms (View: 9, DB: 2) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-23 01:36:37) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 54ms (View: 33, DB: 3) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-23 01:36:38) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 138ms (View: 80, DB: 6) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-23 01:36:47) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"222222222", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"bbbbbbbbb"}}
+  [4;35;1mOrderItem Create (24.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(222222222, NULL, '2010-08-22 23:36:47', 1, NULL, NULL, 1, 'bbbbbbbbb', NULL, NULL, '2010-08-22 23:36:47')[0m
+Redirected to http://localhost:3000/order_items/125
+Completed in 82ms (DB: 24) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-23 01:36:48) [GET]
+  Parameters: {"id"=>"125"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 125) [0m
+  [4;35;1mOrderItem Update (2.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 6666666660, "order_id" = 27, "product_type_id" = 6, "updated_at" = '2010-08-22 23:36:48' WHERE "id" = 125[0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 129ms (View: 60, DB: 5) | 200 OK [http://localhost/order_items/125]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-23 01:37:10) [GET]
+  Parameters: {"id"=>"124"}
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 124) [0m
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (2.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (4.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 203ms (View: 120, DB: 10) | 200 OK [http://localhost/order_items/124/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-23 01:37:21) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"1", "print_id"=>"3", "paper_type_id"=>"1", "nev"=>"a"}, "id"=>"124"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 124) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "nev" = 'a', "darab" = 1, "updated_at" = '2010-08-22 23:37:21' WHERE "id" = 124[0m
+Redirected to http://localhost:3000/order_items/124
+Completed in 68ms (DB: 2) | 302 Found [http://localhost/order_items/124]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-23 01:37:22) [GET]
+  Parameters: {"id"=>"124"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 124) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 30, "product_type_id" = 124, "updated_at" = '2010-08-22 23:37:22' WHERE "id" = 124[0m
+  [4;36;1mOrderItem Load (4.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 109ms (View: 41, DB: 6) | 200 OK [http://localhost/order_items/124]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-23 01:37:25) [GET]
+  Parameters: {"id"=>"125"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 125) [0m
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (3.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 142ms (View: 81, DB: 7) | 200 OK [http://localhost/order_items/125/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-23 01:37:34) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"2", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"b"}, "id"=>"125"}
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 125) [0m
+  [4;35;1mOrderItem Update (2.0ms)[0m   [0mUPDATE "order_items" SET "nev" = 'b', "darab" = 2, "updated_at" = '2010-08-22 23:37:34' WHERE "id" = 125[0m
+Redirected to http://localhost:3000/order_items/125
+Completed in 54ms (DB: 4) | 302 Found [http://localhost/order_items/125]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-23 01:37:34) [GET]
+  Parameters: {"id"=>"125"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 125) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 60, "product_type_id" = 125, "updated_at" = '2010-08-22 23:37:35' WHERE "id" = 125[0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 235ms (View: 42, DB: 4) | 200 OK [http://localhost/order_items/125]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-23 01:37:37) [GET]
+  Parameters: {"id"=>"123"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 123) [0m
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (3.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 145ms (View: 84, DB: 6) | 200 OK [http://localhost/order_items/123/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-23 01:37:46) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"4", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"2"}, "id"=>"123"}
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 123) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "nev" = '2', "darab" = 4, "updated_at" = '2010-08-22 23:37:46' WHERE "id" = 123[0m
+Redirected to http://localhost:3000/order_items/123
+Completed in 57ms (DB: 3) | 302 Found [http://localhost/order_items/123]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-23 01:37:46) [GET]
+  Parameters: {"id"=>"123"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 123) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 120, "product_type_id" = 123, "updated_at" = '2010-08-22 23:37:46' WHERE "id" = 123[0m
+  [4;36;1mOrderItem Load (3.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 109ms (View: 44, DB: 5) | 200 OK [http://localhost/order_items/123]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-23 01:37:53) [GET]
+  Parameters: {"id"=>"122"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 122) [0m
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (4.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 152ms (View: 84, DB: 8) | 200 OK [http://localhost/order_items/122/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-23 01:38:03) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"3232", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"assasa"}, "id"=>"122"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 122) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "nev" = 'assasa', "darab" = 3232, "updated_at" = '2010-08-22 23:38:03' WHERE "id" = 122[0m
+Redirected to http://localhost:3000/order_items/122
+Completed in 61ms (DB: 2) | 302 Found [http://localhost/order_items/122]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-23 01:38:03) [GET]
+  Parameters: {"id"=>"122"}
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 122) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 96960, "product_type_id" = 122, "updated_at" = '2010-08-22 23:38:03' WHERE "id" = 122[0m
+  [4;36;1mOrderItem Load (3.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 107ms (View: 43, DB: 6) | 200 OK [http://localhost/order_items/122]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-23 01:38:11) [GET]
+  [4;35;1mProductCategory Load (2.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 26ms (View: 9, DB: 2) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-23 01:38:13) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (3.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 53ms (View: 33, DB: 4) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-23 01:38:16) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (2.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (4.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 144ms (View: 86, DB: 8) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-23 01:38:37) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"333", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"aaaa"}}
+  [4;36;1mOrderItem Create (2.0ms)[0m   [0;1mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(333, NULL, '2010-08-22 23:38:37', 1, NULL, NULL, 1, 'aaaa', NULL, NULL, '2010-08-22 23:38:37')[0m
+Redirected to http://localhost:3000/order_items/126
+Completed in 56ms (DB: 2) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-23 01:38:39) [GET]
+  Parameters: {"id"=>"126"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 126) [0m
+  [4;36;1mOrderItem Update (1.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 9990, "order_id" = 27, "product_type_id" = 7, "updated_at" = '2010-08-22 23:38:39' WHERE "id" = 126[0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 113ms (View: 52, DB: 5) | 200 OK [http://localhost/order_items/126]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-23 01:38:52) [GET]
+  Parameters: {"id"=>"122"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 122) [0m
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 122) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=122):
+  app/controllers/order_items_controller.rb:83:in `teteladatai_szerkeszt'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (150.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-23 02:12:31) [GET]
+  [4;36;1mProductCategory Load (3.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 33ms (View: 10, DB: 3) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-23 02:12:33) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (6.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+
+ActionView::TemplateError (teteladatai_order_item_url failed to generate from {:ezaproductid=>6, :controller=>"order_items", :action=>"teteladatai"}, expected: {:controller=>"order_items", :action=>"teteladatai"}, diff: {:ezaproductid=>6}) on line #17 of app/views/product_types/index.html.erb:
+14:   <tr>
+15:     <td><%= product_type.kep %></td>
+16:     <td width ="100">
+17: <%= link_to product_type.nev, teteladatai_order_item_path(:ezaproductid => product_type.id)%>
+18: <%#= link_to product_type.nev, teteladatai_order_item_path(product_type.id)%>
+19:     </td>
+20:     <td width ="100"><%= product_type.leiras %></td>
+
+    (eval):16:in `teteladatai_order_item_path'
+    app/views/product_types/index.html.erb:17
+    app/views/product_types/index.html.erb:13:in `each'
+    app/views/product_types/index.html.erb:13
+    app/controllers/product_types_controller.rb:9:in `index'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (261.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-23 02:13:17) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+
+ActionView::TemplateError (teteladatai_order_item_url failed to generate from {:ezaproductid=>6, :controller=>"order_items", :action=>"teteladatai"}, expected: {:controller=>"order_items", :action=>"teteladatai"}, diff: {:ezaproductid=>6}) on line #17 of app/views/product_types/index.html.erb:
+14:   <tr>
+15:     <td><%= product_type.kep %></td>
+16:     <td width ="100">
+17: <%= link_to product_type.nev, teteladatai_order_item_path(:ezaproductid => product_type.id)%>
+18: <%#= link_to product_type.nev, teteladatai_order_item_path(product_type.id)%>
+19:     </td>
+20:     <td width ="100"><%= product_type.leiras %></td>
+
+    (eval):16:in `teteladatai_order_item_path'
+    app/views/product_types/index.html.erb:17
+    app/views/product_types/index.html.erb:13:in `each'
+    app/views/product_types/index.html.erb:13
+    app/controllers/product_types_controller.rb:9:in `index'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (134.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-24 00:13:42) [GET]
+  [4;36;1mProductCategory Load (3.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 277ms (View: 163, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-24 00:15:01) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (29.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 170ms (View: 71, DB: 29) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-24 00:15:05) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (2.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 226ms (View: 170, DB: 6) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-24 01:01:03) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"btKg+tvrDhlZYnZyhMpa1v0a6FvLDTDxRbtjnPG1y8M=", "order_item"=>{"darab"=>"4444", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"dddddddddddddddddddddd"}}
+  [4;35;1mOrderItem Create (50.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(4444, NULL, '2010-08-23 23:01:03', 1, NULL, NULL, 1, 'dddddddddddddddddddddd', NULL, NULL, '2010-08-23 23:01:03')[0m
+Redirected to http://localhost:3000/order_items/127
+Completed in 104ms (DB: 50) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-24 01:01:03) [GET]
+  Parameters: {"id"=>"127"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 127) [0m
+  [4;35;1mOrderItem Update (3.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 133320, "order_id" = 27, "product_type_id" = 7, "updated_at" = '2010-08-23 23:01:03' WHERE "id" = 127[0m
+  [4;36;1mOrderItem Load (34.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 27 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 154ms (View: 62, DB: 38) | 200 OK [http://localhost/order_items/127]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-24 01:01:07) [GET]
+  Parameters: {"id"=>"125"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 125) [0m
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 125) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=125):
+  app/controllers/order_items_controller.rb:83:in `teteladatai_szerkeszt'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (238.0ms)
+Rendered rescues/_request_and_response (8.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-24 01:01:24) [GET]
+  Parameters: {"id"=>"127"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 127) [0m
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (3.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 168ms (View: 112, DB: 6) | 200 OK [http://localhost/order_items/127/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-24 01:01:32) [GET]
+  Parameters: {"id"=>"126"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 126) [0m
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 146ms (View: 79, DB: 8) | 200 OK [http://localhost/order_items/126/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-24 01:01:35) [GET]
+  Parameters: {"id"=>"123"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 123) [0m
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 123) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=123):
+  app/controllers/order_items_controller.rb:83:in `teteladatai_szerkeszt'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-25 18:37:48) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 180ms (View: 100, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 18:38:10) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 115ms (View: 55, DB: 2) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 18:38:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (0.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 5470ms (View: 130, DB: 0) | 200 OK [http://localhost/order_items/3/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 18:49:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProductType Load (10.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #17 of app/views/order_items/teteladatai.html.erb:
+14: <hr />
+15: 
+16: <h2>Kérjük, adja meg a tétel további adatait</h2>
+17: <% form_for(@order_item) do |f| %>
+18:     <%= f.error_messages %>
+19:     <%= f.label "tétel megnevezése:" %>    <%= f.text_field :nev %>   <%= "a tételre jellemző név (pl: nyári szórólap):" %><br /><br />
+20:     <%= f.label "nyomás:" %>     <%= select :order_item,:print_id, Print.find(:all).collect{|p| [p.nev, p.id]} %><br /><br />
+
+    app/views/order_items/teteladatai.html.erb:17
+    app/controllers/order_items_controller.rb:29:in `teteladatai'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 18:50:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (10.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 140ms (View: 110, DB: 10) | 200 OK [http://localhost/order_items/4/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-25 18:51:05) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"IPimJ9ej0XWOqwdvjnx/8mQ84ATlvO6/EYe2fYDWirw=", "order_item"=>{"darab"=>"543", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"fds"}}
+  [4;35;1mOrderItem Create (0.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(543, NULL, '2010-08-25 16:51:05', 1, NULL, NULL, 1, 'fds', NULL, NULL, '2010-08-25 16:51:05')[0m
+Redirected to http://localhost:3000/order_items/128
+Completed in 20ms (DB: 0) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 18:51:05) [GET]
+  Parameters: {"id"=>"128"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 128) [0m
+  [4;35;1mOrder Create (0.0ms)[0m   [0mINSERT INTO "orders" ("address_szall_id", "address_szla_id", "datum_megr", "megjegyzes", "updated_at", "datum_szall", "order_status_id", "user_id", "created_at") VALUES(NULL, NULL, NULL, NULL, '2010-08-25 16:51:05', NULL, NULL, NULL, '2010-08-25 16:51:05')[0m
+  [4;36;1mOrderItem Update (0.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 16290, "order_id" = 28, "product_type_id" = 4, "updated_at" = '2010-08-25 16:51:05' WHERE "id" = 128[0m
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 28 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 50ms (View: 10, DB: 0) | 200 OK [http://localhost/order_items/128]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-25 18:51:15) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 18:51:17) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 27ms (View: 16, DB: 1) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 18:51:18) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (5.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 145ms (View: 115, DB: 5) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-25 18:51:25) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"IPimJ9ej0XWOqwdvjnx/8mQ84ATlvO6/EYe2fYDWirw=", "order_item"=>{"darab"=>"222", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"wwwwww"}}
+  [4;35;1mOrderItem Create (0.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(222, NULL, '2010-08-25 16:51:25', 1, NULL, NULL, 1, 'wwwwww', NULL, NULL, '2010-08-25 16:51:25')[0m
+Redirected to http://localhost:3000/order_items/129
+Completed in 30ms (DB: 0) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 18:51:26) [GET]
+  Parameters: {"id"=>"129"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 129) [0m
+  [4;35;1mOrderItem Update (0.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 6660, "order_id" = 28, "product_type_id" = 7, "updated_at" = '2010-08-25 16:51:26' WHERE "id" = 129[0m
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 28 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 40ms (View: 10, DB: 0) | 200 OK [http://localhost/order_items/129]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-25 18:51:32) [GET]
+  Parameters: {"id"=>"128"}
+  [4;35;1mOrderItem Load (10.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 128) [0m
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;36;1mPrint Load (0.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (0.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 200ms (View: 160, DB: 10) | 200 OK [http://localhost/order_items/128/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-25 18:51:40) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"IPimJ9ej0XWOqwdvjnx/8mQ84ATlvO6/EYe2fYDWirw=", "order_item"=>{"darab"=>"543", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"fdseeeeee"}, "id"=>"128"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 128) [0m
+  [4;35;1mOrderItem Update (0.0ms)[0m   [0mUPDATE "order_items" SET "nev" = 'fdseeeeee', "updated_at" = '2010-08-25 16:51:40' WHERE "id" = 128[0m
+Redirected to http://localhost:3000/order_items/128
+Completed in 30ms (DB: 0) | 302 Found [http://localhost/order_items/128]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 18:51:40) [GET]
+  Parameters: {"id"=>"128"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 128) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "product_type_id" = 128, "updated_at" = '2010-08-25 16:51:40' WHERE "id" = 128[0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 28 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 55ms (View: 15, DB: 4) | 200 OK [http://localhost/order_items/128]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-25 18:51:44) [GET]
+  Parameters: {"id"=>"128"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 128) [0m
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 128) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=128):
+  app/controllers/order_items_controller.rb:37:in `teteladatai_szerkeszt'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-25 18:52:00) [GET]
+  Parameters: {"id"=>"128"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 128) [0m
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 128) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=128):
+  app/controllers/order_items_controller.rb:37:in `teteladatai_szerkeszt'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-25 18:54:50) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 20ms (View: 0, DB: 0) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 18:54:51) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 25ms (View: 15, DB: 0) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 18:54:53) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (0.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (0.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 135ms (View: 110, DB: 0) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-25 18:54:58) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"IPimJ9ej0XWOqwdvjnx/8mQ84ATlvO6/EYe2fYDWirw=", "order_item"=>{"darab"=>"44", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"d"}}
+  [4;36;1mOrderItem Create (0.0ms)[0m   [0;1mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(44, NULL, '2010-08-25 16:54:58', 1, NULL, NULL, 1, 'd', NULL, NULL, '2010-08-25 16:54:58')[0m
+Redirected to http://localhost:3000/order_items/130
+Completed in 30ms (DB: 0) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 18:54:58) [GET]
+  Parameters: {"id"=>"130"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 130) [0m
+  [4;36;1mOrderItem Update (0.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 1320, "order_id" = 28, "product_type_id" = 7, "updated_at" = '2010-08-25 16:54:58' WHERE "id" = 130[0m
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 28 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 60ms (View: 20, DB: 0) | 200 OK [http://localhost/order_items/130]
+
+
+Processing OrderItemsController#destroy (for 127.0.0.1 at 2010-08-25 18:55:12) [DELETE]
+  Parameters: {"authenticity_token"=>"IPimJ9ej0XWOqwdvjnx/8mQ84ATlvO6/EYe2fYDWirw=", "id"=>"128"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 128) [0m
+  [4;35;1mOrderItem Destroy (0.0ms)[0m   [0mDELETE FROM "order_items" WHERE "id" = 128[0m
+Redirected to http://localhost:3000/order_items/show_kosar
+Completed in 30ms (DB: 0) | 302 Found [http://localhost/order_items/128]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 18:55:12) [GET]
+  Parameters: {"id"=>"show_kosar"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find OrderItem with ID=show_kosar):
+  app/controllers/order_items_controller.rb:47:in `show'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (120.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing OrderItemsController#destroy (for 127.0.0.1 at 2010-08-25 18:55:16) [DELETE]
+  Parameters: {"authenticity_token"=>"IPimJ9ej0XWOqwdvjnx/8mQ84ATlvO6/EYe2fYDWirw=", "id"=>"128"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 128) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find OrderItem with ID=128):
+  app/controllers/order_items_controller.rb:75:in `destroy'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 18:58:14) [GET]
+  Parameters: {"id"=>"130"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 130) [0m
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 28 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 40ms (View: 10, DB: 0) | 200 OK [http://localhost/order_items/130]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 18:58:14) [GET]
+  Parameters: {"id"=>"130"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 130) [0m
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 28 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 110ms (View: 10, DB: 0) | 200 OK [http://localhost/order_items/130]
+
+
+Processing OrderItemsController#index (for 127.0.0.1 at 2010-08-25 18:58:56) [GET]
+  [4;36;1mOrderItem Load (10.0ms)[0m   [0;1mSELECT * FROM "order_items" [0m
+Rendering template within layouts/application
+Rendering order_items/index
+Completed in 190ms (View: 180, DB: 10) | 200 OK [http://localhost/order_items/]
+
+
+Processing OrderItemsController#index (for 127.0.0.1 at 2010-08-25 19:01:05) [GET]
+  [4;35;1mOrderItem Load (10.0ms)[0m   [0mSELECT * FROM "order_items" [0m
+Rendering template within layouts/application
+Rendering order_items/index
+Completed in 230ms (View: 210, DB: 10) | 200 OK [http://localhost/order_items/]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 19:03:51) [GET]
+  Parameters: {"id"=>"130"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 130) [0m
+  [4;35;1mOrderItem Load (10.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 28 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 40ms (View: 10, DB: 10) | 200 OK [http://localhost/order_items/130]
+
+
+Processing OrderItemsController#destroy (for 127.0.0.1 at 2010-08-25 19:03:55) [DELETE]
+  Parameters: {"authenticity_token"=>"IPimJ9ej0XWOqwdvjnx/8mQ84ATlvO6/EYe2fYDWirw=", "id"=>"129"}
+  [4;36;1mOrderItem Load (10.0ms)[0m   [0;1mSELECT * FROM "order_items" [0m
+Redirected to http://localhost:3000/order_items/show_kosar
+Completed in 20ms (DB: 10) | 302 Found [http://localhost/order_items/129]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 19:03:55) [GET]
+  Parameters: {"id"=>"show_kosar"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find OrderItem with ID=show_kosar):
+  app/controllers/order_items_controller.rb:47:in `show'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-25 19:05:00) [GET]
+  Parameters: {"id"=>"129"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 129) [0m
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (10.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 80ms (View: 30, DB: 10) | 200 OK [http://localhost/order_items/129/teteladatai_szerkeszt]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 19:06:23) [GET]
+  Parameters: {"id"=>"130"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 130) [0m
+  [4;36;1mOrderItem Update (0.0ms)[0m   [0;1mUPDATE "order_items" SET "product_type_id" = 129, "updated_at" = '2010-08-25 17:06:23' WHERE "id" = 130[0m
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 28 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 40ms (View: 10, DB: 0) | 200 OK [http://localhost/order_items/130]
+
+
+Processing OrderItemsController#destroy (for 127.0.0.1 at 2010-08-25 19:06:28) [DELETE]
+  Parameters: {"authenticity_token"=>"IPimJ9ej0XWOqwdvjnx/8mQ84ATlvO6/EYe2fYDWirw=", "id"=>"129"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 129) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.destroy):
+  app/controllers/order_items_controller.rb:77:in `destroy'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-25 19:35:08) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-25 19:36:52) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-25 19:36:54) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (0.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (0.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 80ms (View: 50, DB: 0) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-25 19:37:02) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"IPimJ9ej0XWOqwdvjnx/8mQ84ATlvO6/EYe2fYDWirw=", "order_item"=>{"darab"=>"", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>""}}
+  [4;36;1mOrderItem Create (0.0ms)[0m   [0;1mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(NULL, NULL, '2010-08-25 17:37:02', 1, NULL, NULL, 1, '', NULL, NULL, '2010-08-25 17:37:02')[0m
+Redirected to http://localhost:3000/order_items/131
+Completed in 30ms (DB: 0) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-25 19:37:02) [GET]
+  Parameters: {"id"=>"131"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 131) [0m
+  [4;36;1mOrderItem Update (0.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 0, "order_id" = 28, "product_type_id" = 7, "updated_at" = '2010-08-25 17:37:02' WHERE "id" = 131[0m
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 28 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 135ms (View: 15, DB: 0) | 200 OK [http://localhost/order_items/131]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-25 19:37:21) [GET]
+  Parameters: {"id"=>"130"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 130) [0m
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 129) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find ProductType with ID=129):
+  app/controllers/order_items_controller.rb:37:in `teteladatai_szerkeszt'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-25 19:37:26) [GET]
+  Parameters: {"id"=>"129"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 129) [0m
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai_szerkeszt
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (0.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 70ms (View: 40, DB: 0) | 200 OK [http://localhost/order_items/129/teteladatai_szerkeszt]

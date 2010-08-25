@@ -1,7 +1,7 @@
 
 <h1>Kosár</h1>
 
-    A megrendelés sorszáma: <%=@kosar.first.order_id %><br /><br />
+    A megrendelés sorszáma: <%=@order.id %><br /><br />
 
 <table cellpadding="6" border="1">
   <tr>
@@ -17,17 +17,18 @@
 
 <% @megr_ar = 0%>
 <% @kosar.each do |order_item| %>
+<%tetelar = order_item.ar_lezart %>
+<%@megr_ar += tetelar %>
   <tr>
     <td></td>
     <td><%=h order_item.nev %></td>
     <td align="right"><%=h order_item.darab %></td>
     <td align="center">30</td>
-    <%tetelar = order_item.ar_lezart %>
-    <%@megr_ar += tetelar %>
     <td align="right"><%=h tetelar %></td>
     <td><% link_to 'Show', order_item %></td>
     <td><%= link_to 'Edit', teteladatai_szerkeszt_order_item_path( order_item.id ) %></td>
-    <%# link_to 'Destroy', order_item, :confirm => 'Biztosan törlöd ezt a tételt?', :method => :delete %>
+    <%# link_to 'Destroy', order_item, :confirm => 'Biztosan törlöd ezt a tételt?',
+:method => :delete %>
     <td><%= link_to 'Destroy', order_item, :method => :delete %></td>
   </tr>
 <% end %>

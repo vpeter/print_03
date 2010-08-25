@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Id</th>
     <th>Order</th>
     <th>Print</th>
     <th>Paper weight price</th>
@@ -14,6 +15,7 @@
 
 <% @order_items.each do |order_item| %>
   <tr>
+    <td><%=h order_item.id %></td>
     <td><%=h order_item.order_id %></td>
     <td><%=h order_item.print_id %></td>
     <td><%=h order_item.paper_weight_price_id %></td>

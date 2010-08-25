@@ -4,8 +4,7 @@ class ProductTypesController < ApplicationController
   def index
     #@product_types = ProductType.all(:conditions => "product_category_id = '#{params[:id]}'")   - behatolható
     #@product_types = ProductType.all(:conditions => { :product_category_id => params[:category] } )    - jó, de csak egyenlőségi vizsgálatot tud
-    @product_types = ProductType.all(:conditions => ["product_category_id == ? ",
-                                                  params[:category].to_i ] )
+    @product_types = ProductType.all(:conditions => ["product_category_id == ? ", params[:category].to_i ] )
 
     respond_to do |format|
       format.html # index.html.erb
