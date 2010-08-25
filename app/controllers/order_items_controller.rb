@@ -3,6 +3,7 @@ class OrderItemsController < ApplicationController
   # GET /order_items/1
   # GET /order_items/1.xml
   def index
+    session[:hely] << " | order_items  -  index  "
     @order_items = OrderItem.all
 
     respond_to do |format|
@@ -12,6 +13,7 @@ class OrderItemsController < ApplicationController
   end
 
   def szamol
+    session[:hely] << " | order_items  -  szamol  "
 #    kiszámolja a lezárt árat
     if  @order_item.darab
       darab = @order_item.darab
@@ -22,6 +24,7 @@ class OrderItemsController < ApplicationController
   end
 
   def teteladatai
+    session[:hely] << " | order_items  -  teteladatai  "
     @product_type = ProductType.find(params[:id])
     session[:product_type_id] = params[:id]
     @order_item = OrderItem.new
@@ -33,6 +36,7 @@ class OrderItemsController < ApplicationController
   end
 
   def teteladatai_szerkeszt
+    session[:hely] << " | order_items  -  teteladatai_szerkeszt  "
     @order_item = OrderItem.find(params[:id])
     @product_type = ProductType.find(@order_item.product_type_id)
     session[:product_type_id] = params[:id]
@@ -44,11 +48,15 @@ class OrderItemsController < ApplicationController
   end
 
   def show
+    session[:hely] << " | order_items  -  show  "
+#    @order_item.save
     @order_item = OrderItem.find(params[:id])
+    session[:order_item_id] = @order_item.id
     szamol # meghívja a lezárt árat kiszámoló metódust
     session[:order] ||= Order.create # ,megnézi hogy létezik-e az ideiglenes
     # order ehhez a látogatóhoz
     @order = session[:order] # az order változóba pakolja a session tartalmát
+    session[:order_id] = @order.id
     @order_item.order_id = @order.id # a frissen létrehozott order itemet az
     # ideiglenes orderhez kapcsolja az order_id beírásával
     @order_item.product_type_id = session[:product_type_id]
@@ -58,6 +66,7 @@ class OrderItemsController < ApplicationController
   end
 
   def show_kosar
+    session[:hely] << " | order_items  -  show_kosar  "
     @order = session[:order] # az order változóba pakolja a session tartalmát
     @kosar = OrderItem.all(:conditions => ["order_id == ? ", @order.id ] )
 
@@ -72,6 +81,7 @@ class OrderItemsController < ApplicationController
   # DELETE /order_items/1
   # DELETE /order_items/1.xml
   def destroy
+    session[:hely] << " | order_items  -  destroy  "
     @order_item = OrderItem.find(params[:id])
     @order_item.destroy
 
@@ -86,6 +96,7 @@ class OrderItemsController < ApplicationController
   # GET /order_items/new
   # GET /order_items/new.xml
   def new
+    session[:hely] << " | order_items  -  new  "
     @order_item = OrderItem.new
 
     respond_to do |format|
@@ -96,12 +107,14 @@ class OrderItemsController < ApplicationController
 
   # GET /order_items/1/edit
   def edit
+    session[:hely] << " | order_items  -  edit  "
     @order_item = OrderItem.find(params[:id])
   end
 
   # POST /order_items
   # POST /order_items.xml
   def create
+    session[:hely] << " | order_items  -  create  "
     @order_item = OrderItem.new(params[:order_item])
 
     respond_to do |format|
@@ -119,6 +132,7 @@ class OrderItemsController < ApplicationController
   # PUT /order_items/1
   # PUT /order_items/1.xml
   def update
+    session[:hely] << " | order_items  -  update  "
     @order_item = OrderItem.find(params[:id])
 
     respond_to do |format|

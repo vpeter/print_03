@@ -5,10 +5,21 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>P R I N T S H O P</title>
 </head>
-
- Kategória id: <%=session[:product_category]%> | Termék type id: <%=session[:product_type_id]%><br />
 <body>
-  <b>F E J L É C</b>
+  <b>Hol jártam: </b><%=session[:hely]%><br /><br />
+  <table cellpadding="">
+    <tr><td width="120px">Kategória id: </td><td><%=session[:product_category]%></td></tr>
+    <tr><td>Termék type id: </td><td><%=session[:product_type_id]%></td></tr>
+    <tr><td>Order item id: </td><td><%=session[:order_item_id]%></td></tr>
+    <tr><td>Order id: </td><td><%=session[:order_id]%></td></tr>
+  </table>
+  <hr />
+  <%session[:hely]= []%>
+  <% if flash[:notice] %>
+      <p><%= flash[:notice] %></p>
+  <% end %>
+     
+ <b>F E J L É C</b>
   <hr />
   <%= yield  %>
   <br /><hr />
