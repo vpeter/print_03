@@ -1,5 +1,9 @@
 <%=@x%>
-<h2>A kiválasztott terméktípus fix jellemzői:</h2>
+<table cellpadding="3" border="0">
+  <tr>
+    <td valign="top">
+<h3>A kiválasztott terméktípus jellemzői:</h3>
+
 <table cellpadding="3" border="0">
 <tr>  <td> <b>Terméktípus id:</b></td>    <td> <%=h session[:product_type_id] %> </td>                                           </tr>
 <tr>  <td> <b>id:</b> </td>               <td> <%=h @product_type.id %> </td>                                                     </tr>
@@ -12,14 +16,27 @@
 <tr>  <td> <b>Oldalszáma:</b> </td>       <td> <%=h @product_type.oldalszam %> </td>                                              </tr>
 <tr>  <td> <b>Lapozás: </b> </td>         <td> <%=  if @product_type.felfele_nyilo == 0 then "oldalt" else "felfelé" end%> </td>  </tr>
 </table>
-<hr />
+    </td>  
+    <td width ="30">
+    </td>
+    <td  bgcolor="red">
+    </td>  
+    <td width ="30">
+    </td>
+    <td valign="top">
+<%#*<hr />%>
 
-<h2>Kérjük, adja meg a tétel további adatait</h2>
+<h3>Kérjük, adja meg a tétel további adatait</h3>
 <% form_for(@order_item) do |f| %>
     <%= f.error_messages %>
-    <%= f.label "tétel megnevezése:" %>    <%= f.text_field :nev %>   <%= "a tételre jellemző név (pl: nyári szórólap):" %><br /><br />
-    <%= f.label "nyomás:" %>     <%= select :order_item,:print_id, Print.find(:all).collect{|p| [p.nev, p.id]} %><br /><br />
-    <%= f.label "papírtípus:" %> <%= select :order_item,:paper_type_id, PaperType.find(:all).collect{|p| [p.nev, p.id]}%><br /><br />
-    <%= f.label "darabszám:" %>  <%= f.text_field :darab %><br /><br />
-    <%= f.submit "kosárba" %>
+<table valign="top">
+    <tr>  <td width =" 150"><b><%= f.label "tétel megnevezése:" %></b></td><td>    <%= f.text_field :nev %></td></tr>
+    <tr>  <td><b><%= f.label "nyomás:" %></b></td><td>     <%= select :order_item,:print_id, Print.find(:all).collect{|p| [p.nev, p.id]} %></td></tr>
+    <tr>  <td><b><%= f.label "papírtípus:" %></b></td><td> <%= select :order_item,:paper_type_id, PaperType.find(:all).collect{|p| [p.nev, p.id]}%></td></tr>
+    <tr>  <td><b><%= f.label "darabszám:" %></b></td><td>  <%= f.text_field :darab %></td></tr>
+    <tr>  <td><b><%= f.submit "kosárba" %></b></td></tr>
+</table>
+</td>
+  </tr>
+</table>
 <% end %>

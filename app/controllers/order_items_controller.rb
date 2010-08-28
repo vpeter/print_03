@@ -3,7 +3,7 @@ class OrderItemsController < ApplicationController
   # GET /order_items/1
   # GET /order_items/1.xml
   def index
-    session[:hely] << " | order_items  -  index  "
+    session[:hely] << "||| id: #{params[:id]} | order_items  -  index  "
     @order_items = OrderItem.all
 
     respond_to do |format|
@@ -12,19 +12,8 @@ class OrderItemsController < ApplicationController
     end
   end
 
-  def szamol
-    session[:hely] << " | order_items  -  szamol  "
-#    kiszámolja a lezárt árat
-    if  @order_item.darab
-      darab = @order_item.darab
-    else
-      darab = 0
-    end
-    @order_item.ar_lezart = darab * 30
-  end
-
   def teteladatai
-    session[:hely] << " | order_items  -  teteladatai  "
+    session[:hely] << "||| id: #{params[:id]} | order_items  -  teteladatai  "
     @product_type = ProductType.find(params[:id])
     session[:product_type_id] = params[:id]
     @order_item = OrderItem.new
@@ -36,52 +25,65 @@ class OrderItemsController < ApplicationController
   end
 
   def teteladatai_szerkeszt
-    session[:hely] << " | order_items  -  teteladatai_szerkeszt  "
-    @order_item = OrderItem.find(params[:id])
+    session[:hely] << "||| id: #{params[:id]} | order_items  -  teteladatai_szerkeszt  "
+    session[:order_item_id] = params[:order_item_id]
+    @order_item = OrderItem.find(params[:order_item_id])
     @product_type = ProductType.find(@order_item.product_type_id)
-    session[:product_type_id] = params[:id]
+    session[:product_type_id] = @order_item.product_type_id
 
-    respond_to do |format|
-      format.html #render :action => "teteladatai"
-      format.xml  { render :xml => @order_item }
-    end
+    render :action => "teteladatai"
+#
+#    respond_to do |format|
+#      format.html render :action => "teteladatai"
+#      format.xml  { render :xml => @order_item }
+#    end
   end
 
   def show
-    session[:hely] << " | order_items  -  show  "
-#    @order_item.save
+    session[:hely] << "||| id: #{params[:id]} | order_items  -  show  "
+
     @order_item = OrderItem.find(params[:id])
     session[:order_item_id] = @order_item.id
-    szamol # meghívja a lezárt árat kiszámoló metódust
-    session[:order] ||= Order.create # ,megnézi hogy létezik-e az ideiglenes
-    # order ehhez a látogatóhoz
-    @order = session[:order] # az order változóba pakolja a session tartalmát
+
+    szamol
+
+    session[:order] ||= Order.create
+    @order = session[:order]
     session[:order_id] = @order.id
-    @order_item.order_id = @order.id # a frissen létrehozott order itemet az
-    # ideiglenes orderhez kapcsolja az order_id beírásával
+    @order_item.order_id = @order.id
     @order_item.product_type_id = session[:product_type_id]
-    @order_item.save # menti az order itemet az order_id vel
-#    @kosar = OrderItem.all(:conditions => ["order_id == ? ", @order.id ] )
-    show_kosar #ez rakja be a kosár változóba a megjelenítendő order_item eket
+    @order_item.save
+    show_kosar
+
+#    respond_to do |format|
+#      format.html # show.html.erb
+#      format.xml  { render :xml => @order_item }
+#    end
+  end
+
+  def szamol
+    session[:hely] << "||| id: #{params[:id]} | order_items  -  szamol  "
+    if  @order_item.darab
+      darab = @order_item.darab
+    else
+      darab = 0
+    end
+    @order_item.ar_lezart = darab * 30
   end
 
   def show_kosar
-    session[:hely] << " | order_items  -  show_kosar  "
-    @order = session[:order] # az order változóba pakolja a session tartalmát
-    @kosar = OrderItem.all(:conditions => ["order_id == ? ", @order.id ] )
+    session[:hely] << "||| id: #{params[:id]} | order_items  -  show_kosar  "
+    @order = session[:order]
+    @kosarka = OrderItem.all(:conditions => ["order_id == ? ", @order.id ] )
 
-#    @kosar = OrderItem.find(session[:order])
-#    redirect_to :action => "kosar"
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @order_item }
-    end
+    render :action => "show"
+    
   end
 
   # DELETE /order_items/1
   # DELETE /order_items/1.xml
   def destroy
-    session[:hely] << " | order_items  -  destroy  "
+    session[:hely] << "||| id: #{params[:id]} | order_items  -  destroy  "
     @order_item = OrderItem.find(params[:id])
     @order_item.destroy
 
@@ -96,7 +98,7 @@ class OrderItemsController < ApplicationController
   # GET /order_items/new
   # GET /order_items/new.xml
   def new
-    session[:hely] << " | order_items  -  new  "
+    session[:hely] << "||| id: #{params[:id]} | order_items  -  new  "
     @order_item = OrderItem.new
 
     respond_to do |format|
@@ -107,14 +109,14 @@ class OrderItemsController < ApplicationController
 
   # GET /order_items/1/edit
   def edit
-    session[:hely] << " | order_items  -  edit  "
+    session[:hely] << "||| id: #{params[:id]} | order_items  -  edit  "
     @order_item = OrderItem.find(params[:id])
   end
 
   # POST /order_items
   # POST /order_items.xml
   def create
-    session[:hely] << " | order_items  -  create  "
+    session[:hely] << "||| id: #{params[:id]} | order_items  -  create  "
     @order_item = OrderItem.new(params[:order_item])
 
     respond_to do |format|
@@ -132,7 +134,7 @@ class OrderItemsController < ApplicationController
   # PUT /order_items/1
   # PUT /order_items/1.xml
   def update
-    session[:hely] << " | order_items  -  update  "
+    session[:hely] << "||| id: #{params[:id]} | order_items  -  update  "
     @order_item = OrderItem.find(params[:id])
 
     respond_to do |format|
