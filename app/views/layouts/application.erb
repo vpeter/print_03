@@ -3,36 +3,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <%= stylesheet_link_tag 'oladi_peti_irja_meg_egyszer_majd' %>
   <title>P R I N T S H O P</title>
 </head>
 <body>
   <table>
     <tr valign ="top">
-      <td align="center" valign ="middle" width="20" bgcolor="#444">
-        <p style ="color: orange"><b>D E B U G</b></p>
-      </td>
-        <td width="300" bgcolor="#fbe390">
+      <td  class = "debug_cim"> debug </td>
+      <td  class = "debug_tartalom">
         <b>Hol jártam: </b><br />
         <%@helyek=session[:hely]%>
         <%@helyek.each do |hely|%>
           <%=hely%><br />
         <% end %><br />
-        </td>
-      <td align="center" valign ="middle" width="20" bgcolor="#444">
-        <p style ="color: orange"><b>D E B U G</b></p>
       </td>
-      <td width="300"  bgcolor="#fbe390">
+      <td  class = "debug_cim"> debug </td>
+      <td  class = "debug_tartalom">
         <b>Mit láttam: </b><br />
         <table>
-          <tr><td width="120px">Kategória id: </td> <td align="right"><%=session[:product_category]%></td></tr>
-          <tr><td>Termék type id: </td>             <td align="right"><%=session[:product_type_id]%></td></tr>
-          <tr><td>Order item id: </td>              <td align="right"><%=session[:order_item_id]%></td></tr>
-          <tr><td>Order id: </td>                   <td align="right"><%=session[:order_id]%></td></tr>
+          <tr><td>Kategória id: </td>   <td align="right"><%=session[:product_category]%></td></tr>
+          <tr><td>Termék type id: </td> <td align="right"><%=session[:product_type_id]%></td></tr>
+          <tr><td>Order item id: </td>  <td align="right"><%=session[:order_item_id]%></td></tr>
+          <tr><td>Order id: </td>       <td align="right"><%=session[:order_id]%></td></tr>
         </table>
       </td>
-      <td align="center" valign ="middle" width="20" bgcolor="#444">
-        <p style ="color: orange"><b>D E B U G</b></p>
-      </td>
+       <td  class = "debug_cim"> debug </td>
     </tr>
   </table>
   <hr />
@@ -41,11 +36,11 @@
       <p><%= flash[:notice] %></p>
   <% end %>
      
-  <p style=" color: red">
+  <p style=" color:  teal; font-size: 14pt; ">
     <b>F E J L É C</b>
   </p>
     <hr />  <%= yield  %>  <br /><hr />
-  <p style=" color: red">
+  <p style=" color:  teal; font-size: 14pt; ">
     <b>L Á B L É C</b>
   </p>
 </body>

@@ -1,5 +1,5 @@
 <h2>Kosár</h2>
-<table cellpadding="6" border="0">
+<table bgcolor="#a0b090" cellpadding="6" border="0">
   <tr>
     <td colspan="9" align="right"><b>A megrendelés sorszáma:</b> <%=@order.id%></td>
   </tr>
@@ -15,11 +15,13 @@
     <th>item_id</th>
   </tr>
   <% @megr_ar = 0%>
+  <% @sorsz = 1%>
   <% @kosarka.each do |order_item| %>
   <% tetelar = order_item.ar_lezart %>
   <% @megr_ar += tetelar %>
   <tr>
-    <td></td>
+    <td><%= @sorsz %></td>
+  <% @sorsz += 1%>
     <td><%=h order_item.nev %></td>
     <td align="right"><%=h order_item.darab %></td>
     <td align="center">30</td>

@@ -36959,3 +36959,1335 @@ Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 03:23:49) [GET
 Rendering template within layouts/application
 Rendering order_items/show
 Completed in 40ms (View: 10, DB: 10) | 200 OK [http://localhost/order_items/205]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 11:21:59) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 4181ms (View: 109, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 11:22:52) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 11:25:35) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 12:04:32) [GET]
+  [4;35;1mProductCategory Load (2.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 152ms (View: 26, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 12:04:44) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 48ms (View: 30, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 12:06:28) [GET]
+  [4;35;1mProductCategory Load (2.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 44ms (View: 27, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 12:06:56) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 53ms (View: 27, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 12:07:05) [GET]
+  [4;35;1mProductCategory Load (2.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 51ms (View: 32, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 12:13:27) [GET]
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 44ms (View: 27, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 12:13:53) [GET]
+  [4;35;1mProductCategory Load (2.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 43ms (View: 26, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 12:33:22) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 47ms (View: 30, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-28 12:33:39) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 85ms (View: 56, DB: 2) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:33:52) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 145ms (View: 105, DB: 5) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:35:41) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 237ms (View: 76, DB: 7) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:36:04) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 118ms (View: 77, DB: 7) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:36:18) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 117ms (View: 78, DB: 5) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:36:30) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 231ms (View: 78, DB: 7) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:36:47) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (4.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 124ms (View: 80, DB: 8) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:36:57) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 117ms (View: 76, DB: 6) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:37:26) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 242ms (View: 198, DB: 7) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:37:42) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 119ms (View: 78, DB: 5) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:38:58) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 119ms (View: 78, DB: 5) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:39:13) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 234ms (View: 191, DB: 7) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:39:38) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (6.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 151ms (View: 106, DB: 10) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:39:53) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 131ms (View: 85, DB: 7) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:41:24) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (4.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 259ms (View: 213, DB: 9) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:52:26) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 139ms (View: 97, DB: 7) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:53:08) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 137ms (View: 97, DB: 6) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:57:19) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 251ms (View: 93, DB: 7) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:57:38) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 150ms (View: 108, DB: 7) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:58:22) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 142ms (View: 99, DB: 5) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 12:59:25) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 135ms (View: 95, DB: 6) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-28 13:00:01) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "order_item"=>{"darab"=>"", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>""}}
+  [4;35;1mOrderItem Create (1.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(NULL, NULL, '2010-08-28 11:00:01', 1, NULL, NULL, 1, '', NULL, NULL, '2010-08-28 11:00:01')[0m
+Redirected to http://localhost:3001/order_items/206
+Completed in 40ms (DB: 1) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:00:01) [GET]
+  Parameters: {"id"=>"206"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 206) [0m
+  [4;35;1mOrder Create (1.0ms)[0m   [0mINSERT INTO "orders" ("address_szall_id", "address_szla_id", "datum_megr", "megjegyzes", "updated_at", "datum_szall", "order_status_id", "user_id", "created_at") VALUES(NULL, NULL, NULL, NULL, '2010-08-28 11:00:01', NULL, NULL, NULL, '2010-08-28 11:00:01')[0m
+  [4;36;1mOrderItem Update (2.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 0, "order_id" = 43, "product_type_id" = 6, "updated_at" = '2010-08-28 11:00:01' WHERE "id" = 206[0m
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 112ms (View: 26, DB: 5) | 200 OK [http://localhost/order_items/206]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-28 13:00:21) [GET]
+  Parameters: {"order_item_id"=>"206", "id"=>"206"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 206) [0m
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 241ms (View: 73, DB: 6) | 200 OK [http://localhost/order_items/206/teteladatai_szerkeszt?order_item_id=206]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-28 13:00:38) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "order_item"=>{"darab"=>"6", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"Naptár anyuéknak"}, "id"=>"206"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 206) [0m
+  [4;36;1mOrderItem Update (6.0ms)[0m   [0;1mUPDATE "order_items" SET "nev" = 'Naptár anyuéknak', "darab" = 6, "updated_at" = '2010-08-28 11:00:39' WHERE "id" = 206[0m
+Redirected to http://localhost:3001/order_items/206
+Completed in 57ms (DB: 7) | 302 Found [http://localhost/order_items/206]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:00:39) [GET]
+  Parameters: {"id"=>"206"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 206) [0m
+  [4;36;1mOrderItem Update (1.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 180, "updated_at" = '2010-08-28 11:00:39' WHERE "id" = 206[0m
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 74ms (View: 13, DB: 3) | 200 OK [http://localhost/order_items/206]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 13:00:51) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 44ms (View: 11, DB: 2) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-28 13:00:54) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (3.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 182ms (View: 33, DB: 4) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 13:00:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 130ms (View: 77, DB: 7) | 200 OK [http://localhost/order_items/3/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-28 13:01:05) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "order_item"=>{"darab"=>"33", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"Haliho"}}
+  [4;35;1mOrderItem Create (32.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(33, NULL, '2010-08-28 11:01:05', 1, NULL, NULL, 1, 'Haliho', NULL, NULL, '2010-08-28 11:01:05')[0m
+Redirected to http://localhost:3001/order_items/207
+Completed in 82ms (DB: 32) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:01:05) [GET]
+  Parameters: {"id"=>"207"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 207) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 990, "order_id" = 43, "product_type_id" = 3, "updated_at" = '2010-08-28 11:01:05' WHERE "id" = 207[0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 76ms (View: 18, DB: 4) | 200 OK [http://localhost/order_items/207]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 13:01:08) [GET]
+  [4;35;1mProductCategory Load (2.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 37ms (View: 10, DB: 2) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-28 13:01:11) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (2.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 60ms (View: 30, DB: 3) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 13:01:13) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (4.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 131ms (View: 78, DB: 6) | 200 OK [http://localhost/order_items/7/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-28 13:01:20) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "order_item"=>{"darab"=>"120", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"ujság"}}
+  [4;36;1mOrderItem Create (1.0ms)[0m   [0;1mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(120, NULL, '2010-08-28 11:01:20', 1, NULL, NULL, 1, 'ujság', NULL, NULL, '2010-08-28 11:01:20')[0m
+Redirected to http://localhost:3001/order_items/208
+Completed in 161ms (DB: 1) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:01:20) [GET]
+  Parameters: {"id"=>"208"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 208) [0m
+  [4;36;1mOrderItem Update (1.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 3600, "order_id" = 43, "product_type_id" = 7, "updated_at" = '2010-08-28 11:01:20' WHERE "id" = 208[0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 80ms (View: 24, DB: 4) | 200 OK [http://localhost/order_items/208]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-28 13:01:29) [GET]
+  Parameters: {"order_item_id"=>"207", "id"=>"208"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 207) [0m
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 132ms (View: 73, DB: 7) | 200 OK [http://localhost/order_items/208/teteladatai_szerkeszt?order_item_id=207]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-28 13:01:36) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "order_item"=>{"darab"=>"100", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"Haliho"}, "id"=>"207"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 207) [0m
+  [4;36;1mOrderItem Update (1.0ms)[0m   [0;1mUPDATE "order_items" SET "darab" = 100, "updated_at" = '2010-08-28 11:01:36' WHERE "id" = 207[0m
+Redirected to http://localhost:3001/order_items/207
+Completed in 51ms (DB: 2) | 302 Found [http://localhost/order_items/207]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:01:36) [GET]
+  Parameters: {"id"=>"207"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 207) [0m
+  [4;36;1mOrderItem Update (2.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 3000, "updated_at" = '2010-08-28 11:01:36' WHERE "id" = 207[0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 81ms (View: 25, DB: 6) | 200 OK [http://localhost/order_items/207]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-28 13:01:46) [GET]
+  Parameters: {"order_item_id"=>"206", "id"=>"207"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 206) [0m
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 131ms (View: 74, DB: 7) | 200 OK [http://localhost/order_items/207/teteladatai_szerkeszt?order_item_id=206]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-28 13:01:49) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "order_item"=>{"darab"=>"10", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"Naptár anyuéknak"}, "id"=>"206"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 206) [0m
+  [4;36;1mOrderItem Update (1.0ms)[0m   [0;1mUPDATE "order_items" SET "darab" = 10, "updated_at" = '2010-08-28 11:01:50' WHERE "id" = 206[0m
+Redirected to http://localhost:3001/order_items/206
+Completed in 53ms (DB: 2) | 302 Found [http://localhost/order_items/206]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:01:50) [GET]
+  Parameters: {"id"=>"206"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 206) [0m
+  [4;36;1mOrderItem Update (1.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 300, "updated_at" = '2010-08-28 11:01:50' WHERE "id" = 206[0m
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 190ms (View: 25, DB: 3) | 200 OK [http://localhost/order_items/206]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:02:39) [GET]
+  Parameters: {"id"=>"206"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 206) [0m
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 75ms (View: 25, DB: 2) | 200 OK [http://localhost/order_items/206]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 13:02:49) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 38ms (View: 11, DB: 2) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-28 13:02:50) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (2.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 60ms (View: 30, DB: 3) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 13:02:52) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 248ms (View: 196, DB: 6) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-28 13:02:59) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "order_item"=>{"darab"=>"44", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"Télapó"}}
+  [4;35;1mOrderItem Create (2.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(44, NULL, '2010-08-28 11:02:59', 1, NULL, NULL, 1, 'Télapó', NULL, NULL, '2010-08-28 11:02:59')[0m
+Redirected to http://localhost:3001/order_items/209
+Completed in 50ms (DB: 2) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:03:00) [GET]
+  Parameters: {"id"=>"209"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 209) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 1320, "order_id" = 43, "product_type_id" = 6, "updated_at" = '2010-08-28 11:03:00' WHERE "id" = 209[0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 89ms (View: 33, DB: 3) | 200 OK [http://localhost/order_items/209]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:05:49) [GET]
+  Parameters: {"id"=>"209"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 209) [0m
+  [4;36;1mOrderItem Load (3.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 84ms (View: 32, DB: 4) | 200 OK [http://localhost/order_items/209]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 13:05:51) [GET]
+  [4;35;1mProductCategory Load (2.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 37ms (View: 10, DB: 2) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-28 13:05:53) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (2.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 62ms (View: 30, DB: 2) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 13:05:55) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (1.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (3.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 132ms (View: 78, DB: 5) | 200 OK [http://localhost/order_items/6/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-28 13:06:01) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "order_item"=>{"darab"=>"33", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"www"}}
+  [4;36;1mOrderItem Create (1.0ms)[0m   [0;1mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(33, NULL, '2010-08-28 11:06:01', 1, NULL, NULL, 1, 'www', NULL, NULL, '2010-08-28 11:06:01')[0m
+Redirected to http://localhost:3001/order_items/210
+Completed in 76ms (DB: 1) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:06:02) [GET]
+  Parameters: {"id"=>"210"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;36;1mOrderItem Update (1.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 990, "order_id" = 43, "product_type_id" = 6, "updated_at" = '2010-08-28 11:06:02' WHERE "id" = 210[0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 95ms (View: 38, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:08:51) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 91ms (View: 38, DB: 4) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#destroy (for 127.0.0.1 at 2010-08-28 13:09:14) [DELETE]
+  Parameters: {"authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "id"=>"207"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 207) [0m
+  [4;35;1mOrderItem Destroy (2.0ms)[0m   [0mDELETE FROM "order_items" WHERE "id" = 207[0m
+Redirected to http://localhost:3001/order_items/207/show_kosar
+Completed in 44ms (DB: 3) | 302 Found [http://localhost/order_items/207]
+
+
+Processing OrderItemsController#show_kosar (for 127.0.0.1 at 2010-08-28 13:09:14) [GET]
+  Parameters: {"id"=>"207"}
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 76ms (View: 39, DB: 2) | 200 OK [http://localhost/order_items/207/show_kosar]
+
+
+Processing OrderItemsController#show_kosar (for 127.0.0.1 at 2010-08-28 13:12:58) [GET]
+  Parameters: {"id"=>"207"}
+  [4;35;1mOrderItem Load (5.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 96ms (View: 56, DB: 5) | 200 OK [http://localhost/order_items/207/show_kosar]
+
+
+Processing OrderItemsController#show_kosar (for 127.0.0.1 at 2010-08-28 13:13:38) [GET]
+  Parameters: {"id"=>"207"}
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 92ms (View: 56, DB: 2) | 200 OK [http://localhost/order_items/207/show_kosar]
+
+
+Processing OrderItemsController#show_kosar (for 127.0.0.1 at 2010-08-28 13:13:45) [GET]
+  Parameters: {"id"=>"207"}
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 93ms (View: 56, DB: 2) | 200 OK [http://localhost/order_items/207/show_kosar]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 13:13:50) [GET]
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 37ms (View: 10, DB: 1) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-28 13:13:52) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (3.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 65ms (View: 34, DB: 3) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 13:13:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (2.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (7.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 168ms (View: 100, DB: 11) | 200 OK [http://localhost/order_items/3/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-28 13:14:01) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "order_item"=>{"darab"=>"120", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"Télapó"}}
+  [4;35;1mOrderItem Create (1.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(120, NULL, '2010-08-28 11:14:01', 1, NULL, NULL, 1, 'Télapó', NULL, NULL, '2010-08-28 11:14:01')[0m
+Redirected to http://localhost:3001/order_items/211
+Completed in 165ms (DB: 1) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:14:01) [GET]
+  Parameters: {"id"=>"211"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 211) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 3600, "order_id" = 43, "product_type_id" = 3, "updated_at" = '2010-08-28 11:14:01' WHERE "id" = 211[0m
+  [4;36;1mOrderItem Load (3.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 99ms (View: 39, DB: 5) | 200 OK [http://localhost/order_items/211]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:15:29) [GET]
+  Parameters: {"id"=>"211"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 211) [0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 104ms (View: 54, DB: 3) | 200 OK [http://localhost/order_items/211]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:17:16) [GET]
+  Parameters: {"id"=>"211"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 211) [0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 107ms (View: 56, DB: 3) | 200 OK [http://localhost/order_items/211]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:17:39) [GET]
+  Parameters: {"id"=>"211"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 211) [0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 106ms (View: 55, DB: 3) | 200 OK [http://localhost/order_items/211]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:21:14) [GET]
+  Parameters: {"id"=>"211"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 211) [0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 107ms (View: 56, DB: 3) | 200 OK [http://localhost/order_items/211]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:21:23) [GET]
+  Parameters: {"id"=>"211"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 211) [0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 110ms (View: 56, DB: 3) | 200 OK [http://localhost/order_items/211]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:22:48) [GET]
+  Parameters: {"id"=>"211"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 211) [0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 233ms (View: 54, DB: 3) | 200 OK [http://localhost/order_items/211]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:23:12) [GET]
+  Parameters: {"id"=>"211"}
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 211) [0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 117ms (View: 63, DB: 4) | 200 OK [http://localhost/order_items/211]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:23:28) [GET]
+  Parameters: {"id"=>"211"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 211) [0m
+  [4;36;1mOrderItem Load (3.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 110ms (View: 60, DB: 4) | 200 OK [http://localhost/order_items/211]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:23:42) [GET]
+  Parameters: {"id"=>"211"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 211) [0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 225ms (View: 54, DB: 3) | 200 OK [http://localhost/order_items/211]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:23:55) [GET]
+  Parameters: {"id"=>"211"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 211) [0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 104ms (View: 55, DB: 2) | 200 OK [http://localhost/order_items/211]
+
+
+Processing OrderItemsController#teteladatai_szerkeszt (for 127.0.0.1 at 2010-08-28 13:27:31) [GET]
+  Parameters: {"order_item_id"=>"210", "id"=>"211"}
+  [4;35;1mOrderItem Load (1.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;36;1mProductType Load (1.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (1.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+  [4;36;1mPrint Load (2.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (3.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 135ms (View: 76, DB: 8) | 200 OK [http://localhost/order_items/211/teteladatai_szerkeszt?order_item_id=210]
+
+
+Processing OrderItemsController#update (for 127.0.0.1 at 2010-08-28 13:27:41) [PUT]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "order_item"=>{"darab"=>"33", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"VW"}, "id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "nev" = 'VW', "updated_at" = '2010-08-28 11:27:41' WHERE "id" = 210[0m
+Redirected to http://localhost:3001/order_items/210
+Completed in 172ms (DB: 2) | 302 Found [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:27:41) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 89ms (View: 40, DB: 4) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:53:12) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 110ms (View: 60, DB: 5) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:53:40) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 111ms (View: 57, DB: 4) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:54:18) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 106ms (View: 56, DB: 4) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:56:01) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 90ms (View: 40, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:59:36) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 91ms (View: 41, DB: 4) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 13:59:52) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 174ms (View: 31, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:03:27) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 108ms (View: 58, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:03:39) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (11.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 108ms (View: 43, DB: 12) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:03:47) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 88ms (View: 40, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:10:32) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 108ms (View: 59, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:10:53) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (4.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 97ms (View: 45, DB: 5) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:11:16) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 93ms (View: 42, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:15:15) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 210ms (View: 40, DB: 2) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:15:32) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 89ms (View: 40, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:15:47) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 99ms (View: 49, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:15:54) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 89ms (View: 40, DB: 4) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:16:18) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 129ms (View: 71, DB: 5) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:18:29) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 90ms (View: 39, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:19:08) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 89ms (View: 40, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:20:07) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 228ms (View: 55, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:24:50) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 90ms (View: 40, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:25:31) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 114ms (View: 58, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:25:44) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 95ms (View: 42, DB: 4) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:26:49) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 107ms (View: 56, DB: 4) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:30:00) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 110ms (View: 58, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:30:08) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 90ms (View: 40, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:31:04) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 226ms (View: 56, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:31:33) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 97ms (View: 41, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:31:48) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 89ms (View: 40, DB: 2) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:32:28) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 231ms (View: 181, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:32:44) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (7.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (7.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 113ms (View: 40, DB: 14) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:33:30) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 90ms (View: 41, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:34:05) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 90ms (View: 40, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:34:40) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 214ms (View: 40, DB: 4) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:35:02) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 107ms (View: 41, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:38:54) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 88ms (View: 39, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:39:16) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 89ms (View: 39, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:40:04) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 91ms (View: 42, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:40:31) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 108ms (View: 30, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:40:46) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 89ms (View: 40, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:42:47) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 231ms (View: 55, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:44:25) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 105ms (View: 55, DB: 4) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:44:42) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 102ms (View: 50, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:44:55) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 96ms (View: 42, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:45:17) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 90ms (View: 40, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:45:28) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 90ms (View: 40, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:46:36) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (3.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 90ms (View: 40, DB: 4) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:46:54) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 184ms (View: 29, DB: 2) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:48:16) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 89ms (View: 39, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:48:34) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (0.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 81ms (View: 30, DB: 2) | 200 OK [http://localhost/order_items/210]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:53:58) [GET]
+  Parameters: {"id"=>"210"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 210) [0m
+  [4;35;1mOrderItem Load (2.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 90ms (View: 40, DB: 3) | 200 OK [http://localhost/order_items/210]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-28 14:55:40) [GET]
+  [4;36;1mProductCategory Load (2.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 41ms (View: 12, DB: 2) | 200 OK [http://localhost/product_categories]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-28 14:55:43) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (4.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/application
+Rendering product_types/index
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 66ms (View: 33, DB: 5) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-28 14:55:46) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProductType Load (1.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (1.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (1.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (3.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 134ms (View: 80, DB: 6) | 200 OK [http://localhost/order_items/4/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-28 14:55:56) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"/L9eTP6/8/nqkVBUntKRuaIpb6bXMqRDMZVL9z85fuY=", "order_item"=>{"darab"=>"500", "print_id"=>"1", "paper_type_id"=>"1", "nev"=>"Télapó"}}
+  [4;35;1mOrderItem Create (2.0ms)[0m   [0mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(500, NULL, '2010-08-28 12:55:56', 1, NULL, NULL, 1, 'Télapó', NULL, NULL, '2010-08-28 12:55:56')[0m
+Redirected to http://localhost:3001/order_items/212
+Completed in 76ms (DB: 2) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:55:57) [GET]
+  Parameters: {"id"=>"212"}
+  [4;36;1mOrderItem Load (1.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE ("order_items"."id" = 212) [0m
+  [4;35;1mOrderItem Update (1.0ms)[0m   [0mUPDATE "order_items" SET "ar_lezart" = 15000, "order_id" = 43, "product_type_id" = 4, "updated_at" = '2010-08-28 12:55:57' WHERE "id" = 212[0m
+  [4;36;1mOrderItem Load (3.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 141ms (View: 46, DB: 5) | 200 OK [http://localhost/order_items/212]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-28 14:56:18) [GET]
+  Parameters: {"id"=>"212"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 212) [0m
+  [4;36;1mOrderItem Load (2.0ms)[0m   [0;1mSELECT * FROM "order_items" WHERE (order_id == 43 ) [0m
+Rendering template within layouts/application
+Rendering order_items/show
+Completed in 98ms (View: 48, DB: 2) | 200 OK [http://localhost/order_items/212]

@@ -2,7 +2,7 @@ class ProductTypesController < ApplicationController
   # GET /product_types
   # GET /product_types.xml
   def index
-    session[:hely] << "||| id: #{params[:id]} | product_types  -  index  "
+    session[:hely] << "params[:id]: #{params[:id]} | product_types  -  index  "
     #@product_types = ProductType.all(:conditions => "product_category_id = '#{params[:id]}'")   - behatolható
     #@product_types = ProductType.all(:conditions => { :product_category_id => params[:category] } )    - jó, de csak egyenlőségi vizsgálatot tud
     @product_types = ProductType.all(:conditions => ["product_category_id == ? ", params[:category].to_i ] )
@@ -17,7 +17,7 @@ class ProductTypesController < ApplicationController
   # GET /product_types/1
   # GET /product_types/1.xml
   def show
-    session[:hely] << "||| id: #{params[:id]} | product_types  -  show  "
+    session[:hely] << "params[:id]: #{params[:id]} | product_types  -  show  "
     @product_type = ProductType.find(params[:id])
 
     respond_to do |format|
@@ -29,7 +29,7 @@ class ProductTypesController < ApplicationController
   # GET /product_types/new
   # GET /product_types/new.xml
   def new
-    session[:hely] << "||| id: #{params[:id]} | product_types  -  new  "
+    session[:hely] << "params[:id]: #{params[:id]} | product_types  -  new  "
     @product_type = ProductType.new
 
     respond_to do |format|
@@ -40,14 +40,14 @@ class ProductTypesController < ApplicationController
 
   # GET /product_types/1/edit
   def edit
-    session[:hely] << "||| id: #{params[:id]} | product_types  -  edit  "
+    session[:hely] << "params[:id]: #{params[:id]} | product_types  -  edit  "
     @product_type = ProductType.find(params[:id])
   end
 
   # POST /product_types
   # POST /product_types.xml
   def create
-    session[:hely] << "||| id: #{params[:id]} | product_types  -  create  "
+    session[:hely] << "params[:id]: #{params[:id]} | product_types  -  create  "
     @product_type = ProductType.new(params[:product_type])
 
     respond_to do |format|
@@ -65,7 +65,7 @@ class ProductTypesController < ApplicationController
   # PUT /product_types/1
   # PUT /product_types/1.xml
   def update
-    session[:hely] << "||| id: #{params[:id]} | product_types  -  update  "
+    session[:hely] << "params[:id]: #{params[:id]} | product_types  -  update  "
     @product_type = ProductType.find(params[:id])
 
     respond_to do |format|
@@ -83,7 +83,7 @@ class ProductTypesController < ApplicationController
   # DELETE /product_types/1
   # DELETE /product_types/1.xml
   def destroy
-    session[:hely] << "||| id: #{params[:id]} | product_types  -  destroy  "
+    session[:hely] << "params[:id]: #{params[:id]} | product_types  -  destroy  "
     @product_type = ProductType.find(params[:id])
     @product_type.destroy
 
