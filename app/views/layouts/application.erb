@@ -1,47 +1,187 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <%= stylesheet_link_tag 'oladi_peti_irja_meg_egyszer_majd' %>
+  <%= stylesheet_link_tag 'reset.css', 'text.css', '960.css', 'site.css' %>
   <title>P R I N T S H O P</title>
+  <title>Index</title>
 </head>
 <body>
-  <table>
-    <tr valign ="top">
-      <td  class = "debug_cim"> debug </td>
-      <td  class = "debug_tartalom">
-        <b>Hol jártam: </b><br />
-        <%@helyek=session[:hely]%>
-        <%@helyek.each do |hely|%>
-          <%=hely%><br />
-        <% end %><br />
-      </td>
-      <td  class = "debug_cim"> debug </td>
-      <td  class = "debug_tartalom">
-        <b>Mit láttam: </b><br />
-        <table>
-          <tr><td>Kategória id: </td>   <td align="right"><%=session[:product_category]%></td></tr>
-          <tr><td>Termék type id: </td> <td align="right"><%=session[:product_type_id]%></td></tr>
-          <tr><td>Order item id: </td>  <td align="right"><%=session[:order_item_id]%></td></tr>
-          <tr><td>Order id: </td>       <td align="right"><%=session[:order_id]%></td></tr>
-        </table>
-      </td>
-       <td  class = "debug_cim"> debug </td>
-    </tr>
-  </table>
-  <hr />
-  <%session[:hely]= []%>
-  <% if flash[:notice] %>
-      <p><%= flash[:notice] %></p>
-  <% end %>
-     
-  <p style=" color:  teal; font-size: 14pt; ">
-    <b>F E J L É C</b>
-  </p>
-    <hr />  <%= yield  %>  <br /><hr />
-  <p style=" color:  teal; font-size: 14pt; ">
-    <b>L Á B L É C</b>
-  </p>
+
+  <!-- HEADER -->
+
+   <div id="header">
+     <div class="container_12">
+       <div id="logo" class="grid_4">
+       </div>
+       <div id="main_menu" class="grid_8">
+         <ul>
+           <li>Főoldal</li>
+           <li>Bejelentkezés</li>
+           <li>Regisztráció</li>
+           <li>FAQ</li>
+         </ul>
+       </div>
+     </div>
+   </div>
+
+  <!-- HEADER END -->
+
+  <!-- INFO 3 COLUMN -->
+
+  <div id="info">
+      <div class="container_12">
+       <div id="info_1" class="grid_4">
+          <div class="info_text">
+            <h2>Mi is ez?</h2>
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+         </div>
+       </div>
+
+       <div id="info_2" class="grid_4">
+         <div class="info_text">
+           <h2>Hogyan működik?</h2>
+             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+          </div>
+       </div>
+
+       <div id="info_3" class="grid_4">
+         <div class="info_text">
+           <h2>Gyakori kérdések</h2>
+             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+         </div>
+       </div>
+      </div>
+  </div>
+
+  <!-- INFO 3 COLUMN END -->
+
+  <!-- WARNING INFORMATION -->
+
+  <div class="container_12">
+    <div id="warning" class="grid_12">
+       <div class="text">
+
+         <% if flash[:notice] %>
+          <%= flash[:notice] %>
+         <% end %>
+
+           <b>Hol jártam?: </b>
+           <%@helyek=session[:hely]%> <br/>
+           <%@helyek.each do |hely|%>
+             <%=hely%><br />
+           <% end %>
+
+           <br/>
+         
+           <b>Mit láttam?: </b><br/>
+           Kategória id:   <%=session[:product_category]%><br/>
+           Termék type id: <%=session[:product_type_id]%><br/>
+           Order item id:  <%=session[:order_item_id]%><br/>
+           Order id:       <%=session[:order_id]%><br/>
+
+       </div>
+     </div>
+  </div>
+
+  <!-- END WARNING INFORMATION -->
+
+   <!-- CATEGORIES -->
+
+   <div id="middle_container">
+     <div class="container_12">
+        <div id="cat_and_cart_container" class="grid_12">
+          <div class="grid_8 alpha">          
+            <div id ="categories" class="container_8"><h2>Válasszon a kategóriák közül</h2></div>
+            <div class="container_8">
+              <%= yield :categories %>
+             <!--
+             <div class="grid_2 alpha"><div class="cat"><a href="#">Category</a></div></div>
+             <div class="grid_2"><div class="cat"><a href="#">Category</a></div></div>
+             <div class="grid_2"><div class="cat"><a href="#">Category</a></div></div>
+             <div class="grid_2 omega"><div class="cat"><a href="#">Category</a></div></div>
+
+             <div class="grid_2 alpha"><div class="cat"><a href="#">Category</a></div></div>
+             <div class="grid_2"><div class="cat"><a href="#">Category</a></div></div>
+             <div class="grid_2"><div class="cat"><a href="#">Category</a></div></div>
+             <div class="grid_2 omega"><div class="cat"><a href="#">Category</a></div></div>
+
+             <div class="grid_2 alpha"><div class="cat"><a href="#">Category</a></div></div>
+             <div class="grid_2"><div class="cat"><a href="#">Category</a></div></div>
+             <div class="grid_2"><div class="cat"><a href="#">Category</a></div></div>
+             <div class="grid_2 omega"><div class="cat"><a href="#">Category</a></div></div>-->
+            </div>
+           </div>
+
+         <!-- END CATS -->
+
+         <!-- SHOPPING CART -->
+
+          <div class="grid_4 omega">
+            <div id="cart_header">
+              <h2>Kosár</h2>
+            </div>
+            <div id="cart_content">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              <br/><br/>
+              It is a long established fact that a reader will be <b>distracted by the readable content of</b> a page when looking at its layout.
+              <br/><br/>
+              Jelenleg üres a kosarad!
+            </div>
+            <div id="cart_info">
+            </div>
+           </div>
+        </div>
+     <!-- SHOPPING CART -->
+      </div>
+     <div class="clear"></div>
+   </div>
+
+ <!-- MAIN TEXTS -->
+
+ <div class="container_12">
+   <div id="main_texts" class="grid_12">
+     <div id="main_texts_content">
+       <%session[:hely]= []%>
+       <%= yield  %>
+       <h2>
+         Canon analóg gépeink 60 oldal/perces másolási sebességgel, érintőpaneles kijelzővel, magyar nyelvű menüvel szolgálják a gyors és könnyű sokszorosítást.
+       </h2>
+       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+       <h2>
+         Fekete-fehér másolataikat saját kezűleg is elkészíthetik ügyfeleink
+       </h2>
+       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+       <h2>
+         A gépek beállításához, ha szükséges, kérje munkatársaink segítségét.
+       </h2>
+       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+     </div>
+   </div>
+
+ </div>
+
+ <!-- END MAIN TEXTS -->
+
+ <!-- FOOTER -->
+
+ <div class="clear"></div>
+
+ <div id="footer" class="container_12">
+     <div id="footer_content" class="container_12">
+       <div class="grid_12">
+         <div class="grid_4 alpha"><div class="footer_text"><h2>Infóvonal</h2><b>It is a long established fact that a reader will be distracted by the readable</b><p> Call : (06-30) 374-7444</p></div></div>
+         <div class="grid_4"><div class="footer_text"><h2>Elérhetőség</h2>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</div></div>
+         <div class="grid_4 omega"><div class="footer_text"><h2>Térkép</h2>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</div></div>
+       </div>
+     </div>
+ </div>
+
+ <!-- END FOOTER -->
+
 </body>
 </html>

@@ -1,14 +1,10 @@
-<h1>Válasszon termékkategóriát!</h1>
-
-<table cellpadding="6">
-<% @product_categories.each do |product_category| %>
-  <tr>
-    <td><%=h product_category.kep %></td>
-    <td>
-<%= link_to product_category.nev,
-  product_types_path( :category=> product_category.id ) %>
-    </td>
-    <td><%=h product_category.leiras %></td>
-  </tr>
+<% content_for :categories do %>  
+    <% @product_categories.each do |product_category| %>
+      <div class="grid_2 alpha">
+        <div class="cat">
+          <%= link_to product_category.nev, product_types_path( :category=> product_category.id ) %>
+        </div>
+      </div>
+    <% end %>  
 <% end %>
-</table>
+

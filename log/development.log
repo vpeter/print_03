@@ -38368,3 +38368,911 @@ Rendering template within layouts/product_types
 Rendering product_types/index
   [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
 Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 13:51:33) [GET]
+  [4;36;1mProductCategory Load (15.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 375ms (View: 219, DB: 15) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 13:51:40) [GET]
+  [4;35;1mProductCategory Load (15.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 13:51:41) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 13:51:43) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 13:58:52) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 13:58:57) [GET]
+  [4;35;1mProductCategory Load (16.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 172ms (View: 16, DB: 16) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 13:59:04) [GET]
+
+ActionController::RoutingError (No route matches "/index" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 13:59:10) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:00:21) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:00:21) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:00:22) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:00:23) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 203ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:00:23) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 14:00:25) [GET]
+  Parameters: {"category"=>"1"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-31 14:00:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 1) [0m
+Rendering template within layouts/order_items
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;36;1mPrint Load (0.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (0.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 281ms (View: 250, DB: 0) | 200 OK [http://localhost/order_items/1/teteladatai]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:00:44) [GET]
+  [4;36;1mProductCategory Load (15.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 172ms (View: 110, DB: 15) | 200 OK [http://localhost/]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 14:00:51) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 157ms (View: 141, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-31 14:00:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 2) [0m
+Rendering template within layouts/order_items
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (0.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/order_items/2/teteladatai]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:02:15) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/product_categories
+Rendering product_categories/index
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:03:47) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 203ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:03:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:05:50) [GET]
+  [4;35;1mProductCategory Load (16.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:05:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:07:01) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 172ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:07:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:11:00) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:11:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:15:31) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:15:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 14:15:42) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:16:52) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:16:52) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 14:19:47) [GET]
+  Parameters: {"category"=>"1"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 140ms (View: 62, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-31 14:19:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 1) [0m
+Rendering template within layouts/order_items
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;36;1mPrint Load (0.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (0.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 93ms (View: 47, DB: 0) | 200 OK [http://localhost/order_items/1/teteladatai]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:36:26) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 218ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:36:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:40:43) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:40:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:41:13) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 109ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:41:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:44:07) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:44:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:47:36) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 219ms (View: 188, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:47:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:47:52) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:47:52) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:49:57) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 156ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:49:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 14:50:24) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 125ms (View: 62, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:53:00) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:53:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 14:53:17) [GET]
+  Parameters: {"category"=>"1"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-31 14:53:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE ("product_types"."id" = 1) [0m
+Rendering template within layouts/order_items
+Rendering order_items/teteladatai
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;36;1mPrint Load (0.0ms)[0m   [0;1mSELECT * FROM "prints" [0m
+  [4;35;1mPaperType Load (0.0ms)[0m   [0mSELECT * FROM "paper_types" [0m
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/order_items/1/teteladatai]
+
+
+Processing OrderItemsController#create (for 127.0.0.1 at 2010-08-31 14:53:52) [POST]
+  Parameters: {"commit"=>"kosárba", "authenticity_token"=>"ieb1aSx0IzhLmOoL3z4T3Dh2Lu+Fu7vAHq10OyD1qyA=", "order_item"=>{"darab"=>"1", "print_id"=>"3", "paper_type_id"=>"3", "nev"=>"valami"}}
+  [4;36;1mOrderItem Create (31.0ms)[0m   [0;1mINSERT INTO "order_items" ("darab", "order_id", "updated_at", "print_id", "document_id", "paper_weight_price_id", "paper_type_id", "nev", "product_type_id", "ar_lezart", "created_at") VALUES(1, NULL, '2010-08-31 10:23:53', 3, NULL, NULL, 3, 'valami', NULL, NULL, '2010-08-31 10:23:53')[0m
+Redirected to http://localhost:3000/order_items/214
+Completed in 156ms (DB: 31) | 302 Found [http://localhost/order_items]
+
+
+Processing OrderItemsController#show (for 127.0.0.1 at 2010-08-31 14:53:53) [GET]
+  Parameters: {"id"=>"214"}
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE ("order_items"."id" = 214) [0m
+  [4;36;1mOrderItem Update (15.0ms)[0m   [0;1mUPDATE "order_items" SET "ar_lezart" = 30, "order_id" = 44, "product_type_id" = 1, "updated_at" = '2010-08-31 10:23:53' WHERE "id" = 214[0m
+  [4;35;1mOrderItem Load (0.0ms)[0m   [0mSELECT * FROM "order_items" WHERE (order_id == 44 ) [0m
+Rendering template within layouts/order_items
+Rendering order_items/show
+Completed in 78ms (View: 32, DB: 15) | 200 OK [http://localhost/order_items/214]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 14:54:04) [GET]
+  [4;36;1mProductCategory Load (15.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/product_categories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 14:54:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 14:54:09) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 14:54:14) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 14:54:35) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (15.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 125ms (View: 63, DB: 15) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 14:54:47) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (15.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 15:04:50) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/product_categories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 15:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 15:04:51) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/product_categories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 15:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 15:04:55) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 15:04:59) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 141ms (View: 125, DB: 0) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 15:05:03) [GET]
+  [4;35;1mProductCategory Load (16.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/product_categories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 15:05:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 15:05:12) [GET]
+  Parameters: {"category"=>"2"}
+  [4;36;1mProductType Load (16.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 125ms (View: 62, DB: 16) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 15:05:15) [GET]
+  Parameters: {"category"=>"1"}
+  [4;36;1mProductType Load (16.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 94ms (View: 31, DB: 16) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 15:05:25) [GET]
+  Parameters: {"category"=>"1"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 15:06:20) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 78ms (View: 31, DB: 0) | 200 OK [http://localhost/product_categories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 15:06:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 15:06:28) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 15:06:51) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 15:06:54) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing OrderItemsController#teteladatai (for 127.0.0.1 at 2010-08-31 15:06:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE ("product_types"."id" = 1) [0m
+Rendering template within layouts/order_items
+Rendering order_items/teteladatai
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+  [4;35;1mPrint Load (0.0ms)[0m   [0mSELECT * FROM "prints" [0m
+  [4;36;1mPaperType Load (0.0ms)[0m   [0;1mSELECT * FROM "paper_types" [0m
+Completed in 94ms (View: 47, DB: 0) | 200 OK [http://localhost/order_items/1/teteladatai]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 15:08:14) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 281ms (View: 234, DB: 0) | 200 OK [http://localhost/product_categories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 15:08:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 15:10:45) [GET]
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/product_categories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 15:10:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 18:18:57) [GET]
+  Parameters: {"category"=>"1"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 204ms (View: 172, DB: 0) | 200 OK [http://localhost/product_types?category=1]
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 18:19:01) [GET]
+  Parameters: {"category"=>"2"}
+  [4;35;1mProductType Load (0.0ms)[0m   [0mSELECT * FROM "product_types" WHERE (product_category_id == 2 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;36;1mProductCategory Load (0.0ms)[0m   [0;1mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 2) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/product_types?category=2]
+
+
+Processing ProductCategoriesController#index (for 127.0.0.1 at 2010-08-31 18:20:35) [GET]
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" [0m
+Rendering template within layouts/application
+Rendering product_categories/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/product_categories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 18:20:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/info_background.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductTypesController#index (for 127.0.0.1 at 2010-08-31 18:21:13) [GET]
+  Parameters: {"category"=>"1"}
+  [4;36;1mProductType Load (0.0ms)[0m   [0;1mSELECT * FROM "product_types" WHERE (product_category_id == 1 ) [0m
+Rendering template within layouts/product_types
+Rendering product_types/index
+  [4;35;1mProductCategory Load (0.0ms)[0m   [0mSELECT * FROM "product_categories" WHERE ("product_categories"."id" = 1) [0m
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://localhost/product_types?category=1]
